@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegan Sweets</title>
+    <title>Fresh Bakes</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,13 +22,10 @@
     src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"
   ></script>
+  <style>
+     
+  </style>
 </head>
-<style>
-    #buttons{
-        width: 300px;
-        margin-left: 850px;
-    }
-</style>
 <body>
     <div class="header">
         <div class="info">
@@ -76,13 +73,14 @@
         </div>
         <div>Call: 9100347480</div>
     </div>
-    <div class="middlebox">vegan Sweets</div>
+    <div class="middlebox">Fresh Bakes</div>
     <div id="productDetails">
         <div class="infoSection">
             <div>
                 <input type="text" placeholder="Search" />
                 <i class="fa-solid fa-magnifying-glass icon"></i>
             </div>
+           
             <div id="category">
                 <h4>Product categories</h4>
                 <hr/>
@@ -113,25 +111,13 @@
             </div>
         </div>
         <div class="productSection">
-           <div><p>Showing 1-6 of 10 results</p>
-            <select name="sort" id="sort">
-                <option value="default">Default Sorting</option>
-                <option value="popularity">Sort by popularity</option>
-                <option value="average">sSort by average rating</option>
-                <option value="latest">Sort by latest</option>
-                <option value="ltoh">Sort by price: low to high</option>
-                <option value="htol">Sort by price: high to low</option>
-            </select>
+           <div><p><i class="fa-regular fa-calendar arrow"></i> No products were found matching your selection.</p>
+            
         </div>
             <div id="productList1">
                 
             </div>
         </div>
-    </div>
-    <div id="buttons">
-        <button>1</button>
-        <button>2</button>
-        <button>></button>
     </div>
     <div id="lowerCover">
         <div id="lowerBox">
@@ -181,75 +167,9 @@
         </div>
         <div><p>Copyright © 2021.<span>FitMeals</span>. All Rights Reserved.</p></div>
     </div>
+    
 </body>
 </html>
 <script src="common.js"></script>
-<script>
-     var sweetsData=[{
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/25-360x360.jpg",
-        name:"Almond Date Chocolate",
-        description:"Delicious Dates stuffed with a Almonds and covered in dark chocolate. With the finest golden almonds at the ...",
-        price:"1,200.00"
-    },{
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/23.jpg",
-        name:"Coco Rush",
-        description:"Coco Rush is made with dates, nuts, premium grade cacao and wholesome ingredients. A delicious, healthy ...",
-        price:"550.00"
-    },
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/veganhomemadeenergybarsh-360x360.jpg",
-        name:"Energy Bars",
-        description:"Each bar brings a great texture with the energy and nutrients you need.  We keep things sweet by using only ...",
-        price:"750.00"
-    },
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/24-360x361.jpg",
-        name:"Flax Seed Balls",
-        description:"A crunchy, chocolaty dessert for hunger pangs, Flax Seeds will provide you instant energy. About This Product ...",
-        price:"550.00"
-    },
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/snack-nuttyBuddy-300x300-1.jpg",
-        name:"Nutty Butty",
-        description:"Nutty Buddy – These Nutrient-packed nutty treats make for the perfect guilt-free snack … and ...",
-        price:"650.00"
-    },{
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/peanut-butter-balls-2-360x360.jpg",
-        name:"Peanut Butter Truffles",
-        description:"Creamy peanut butter completely coated in dark chocolate — The ultimate snack for those who love all things ...",
-        price:"1,050.00"
-    }
-    
-    
-    ]
-    
-    window.addEventListener("load",function(){
-        displayData(sweetsData)
-    })
-    function displayData(sweetsData){
-        sweetsData.map(function(el){
-         var div = document.createElement("div")
-         div.setAttribute("class","items")
-         var image = document.createElement("img")
-         image.src=el.img_url;
-         image.setAttribute("class","image")
-         var h2 = document.createElement("h3")
-         h2.innerText=el.name;
-         var p = document.createElement("p")
-         p.innerText =el.description;
-         var price = document.createElement("h3")
-         price.innerText="₹"+el.price;
-         price.style.color="red";
-         var btn = document.createElement("button")
-         btn.setAttribute("class","btn")
-         btn.innerText="Select options" 
-         var read = document.createElement("p")
-         read.innerText="Read more"
-        // read.style.color="yellowgreen"
-         div.append(image,h2,p,price,btn,read);
-         document.querySelector("#productList1").append(div)
 
-        })
-
-    }
-</script>
+    

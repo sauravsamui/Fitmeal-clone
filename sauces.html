@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegan Sweets</title>
+    <title>Low-Cal Sauces</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,13 +22,13 @@
     src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"
   ></script>
-</head>
-<style>
-    #buttons{
+  <style>
+       #buttons{
         width: 300px;
         margin-left: 850px;
     }
-</style>
+  </style>
+</head>
 <body>
     <div class="header">
         <div class="info">
@@ -76,7 +76,7 @@
         </div>
         <div>Call: 9100347480</div>
     </div>
-    <div class="middlebox">vegan Sweets</div>
+    <div class="middlebox">Low Cal Sauces</div>
     <div id="productDetails">
         <div class="infoSection">
             <div>
@@ -113,7 +113,7 @@
             </div>
         </div>
         <div class="productSection">
-           <div><p>Showing 1-6 of 10 results</p>
+           <div><p>Showing 1-6 of 8 results</p>
             <select name="sort" id="sort">
                 <option value="default">Default Sorting</option>
                 <option value="popularity">Sort by popularity</option>
@@ -185,49 +185,52 @@
 </html>
 <script src="common.js"></script>
 <script>
-     var sweetsData=[{
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/25-360x360.jpg",
-        name:"Almond Date Chocolate",
-        description:"Delicious Dates stuffed with a Almonds and covered in dark chocolate. With the finest golden almonds at the ...",
-        price:"1,200.00"
-    },{
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/23.jpg",
-        name:"Coco Rush",
-        description:"Coco Rush is made with dates, nuts, premium grade cacao and wholesome ingredients. A delicious, healthy ...",
-        price:"550.00"
+     var saucesData=[{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1-360x359.jpg",
+        name:"Arrabiata Sauce",
+        description:"Fitmeals Arrabbiata sauce is a delicious blend of spicy chillies, tomatoes and authentic Italian ingredients. ...",
+        price:"220.00"
+
     },
     {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/veganhomemadeenergybarsh-360x360.jpg",
-        name:"Energy Bars",
-        description:"Each bar brings a great texture with the energy and nutrients you need.  We keep things sweet by using only ...",
-        price:"750.00"
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/12-360x359.jpg",
+        name:"BBQ Sauce",
+        description:"Our signature BBQ sauce has bold, smoky flavour with a hint of sweetness About This Product Bbq sauce has a ...",
+        price:"250.00"
     },
     {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/24-360x361.jpg",
-        name:"Flax Seed Balls",
-        description:"A crunchy, chocolaty dessert for hunger pangs, Flax Seeds will provide you instant energy. About This Product ...",
-        price:"550.00"
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/14--360x360.jpg",
+        name:"Garlic Mayo",
+        description:"The perfect blend of irresistible earthy tones of garlic into freshly prepared mayonnaise creates a ...",
+        price:"180.00"
+    },
+    
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/DSC_0007-360x359.jpg",
+        name:"Green Pesto Sauce",
+        description:"Our Basil Pesto is an excellent versatile spread that is ready to use. Its combination of ingredients offers ...",
+        price:"320.00"
     },
     {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/snack-nuttyBuddy-300x300-1.jpg",
-        name:"Nutty Butty",
-        description:"Nutty Buddy – These Nutrient-packed nutty treats make for the perfect guilt-free snack … and ...",
-        price:"650.00"
-    },{
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/peanut-butter-balls-2-360x360.jpg",
-        name:"Peanut Butter Truffles",
-        description:"Creamy peanut butter completely coated in dark chocolate — The ultimate snack for those who love all things ...",
-        price:"1,050.00"
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/05/Homemade-Ketchup-3-BoulderLocavore.com_-1-360x360.jpg",
+        name:"Homemade Ketchup",
+        description:"The rich creamy texture of this organic vegan tomato ketchup along with a delicious blend of spices provides ...",
+        price:"260.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/05/11-360x360.jpg",
+        name:"Honey Mustard Sauce",
+        description:"DELICIOUS and CLASSIC blend of fresh creamy mustard! IMAGINE having this versatile sauce in your pantry. ...",
+        price:"220.00"
     }
-    
-    
     ]
     
     window.addEventListener("load",function(){
-        displayData(sweetsData)
+        displayData(saucesData)
     })
-    function displayData(sweetsData){
-        sweetsData.map(function(el){
+    function displayData(saucesData){
+        console.log(saucesData)
+        saucesData.map(function(el){
          var div = document.createElement("div")
          div.setAttribute("class","items")
          var image = document.createElement("img")
