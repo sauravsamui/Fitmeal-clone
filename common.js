@@ -1,31 +1,22 @@
-document.querySelector("#product").addEventListener("change", productPage)
-    var productList = document.querySelector("#product")
-  
-     function productPage(){
-        var product =document.querySelector("#product").value
-       
-        
 
-        if(product=="vegan"){
-            window.location.href="vsweets.html"
-            productList.style.color="yellowgreen";
-        }
-       else if(product=="prdcts"){
-            console.log(1)
-            window.location.href="products.html"
-            productList.style.color="yellowgreen";
-        }
-       else if(product=="saus"){
-            window.location.href="sauces.html"
-            productList.style.color="yellowgreen";
-        }
-        else if(product=="butter"){
-            window.location.href="butters.html"
-            productList.style.color="yellowgreen";
-        }
-        else if(product=="bakes"){
-            window.location.href="bakes.html"
-            productList.style.color="yellowgreen";
-        }
+     document.querySelector(".cart").addEventListener("click",cartFunction)
+     function cartFunction(){
+         window.location.href="cart.html"
      }
-     
+      document.querySelector(".profile").addEventListener("click",loginFunction)
+      function loginFunction(){
+          
+          window.location.href="login.html"
+      }
+      window.onscroll = function() {myFunction()};
+    
+      var navbar = document.querySelector(".header2");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }

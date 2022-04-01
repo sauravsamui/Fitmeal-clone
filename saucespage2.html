@@ -19,17 +19,17 @@
     src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"
   ></script>
-  <style>
-       #buttons{
+</head>
+<style>
+    #buttons{
         width: 300px;
-        margin-left: 750px;
+        margin-left: 700px;
     }
-    #buttons>#btn1{
+    #buttons>#btn2{
         background-color: yellowgreen;
         color: white;
     }
-  </style>
-</head>
+</style>
 <body>
     <div class="header">
         <div class="info">
@@ -125,7 +125,7 @@
             </div>
         </div>
         <div class="productSection">
-           <div><p>Showing 1-6 of 8 results</p>
+           <div><p>Showing 7-8 of 8 results</p>
             <select name="sort" id="sort">
                 <option value="default">Default Sorting</option>
                 <option value="popularity">Sort by popularity</option>
@@ -141,11 +141,10 @@
         </div>
     </div>
     <div id="buttons">
-
+        <button id="btn0"><</button>
         <button id="btn1">1</button>
         <button id="btn2">2</button>
-        <button id="btn3">></button>
-        
+      
     </div>
     <div id="lowerCover">
         <div id="lowerBox">
@@ -200,43 +199,18 @@
 <script src="common.js"></script>
 <script>
      var saucesData=[{
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1-360x359.jpg",
-        name:"Arrabiata Sauce",
-        description:"Fitmeals Arrabbiata sauce is a delicious blend of spicy chillies, tomatoes and authentic Italian ingredients. ...",
-        price:"220.00"
-
-    },
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/12-360x359.jpg",
-        name:"BBQ Sauce",
-        description:"Our signature BBQ sauce has bold, smoky flavour with a hint of sweetness About This Product Bbq sauce has a ...",
-        price:"250.00"
-    },
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/14--360x360.jpg",
-        name:"Garlic Mayo",
-        description:"The perfect blend of irresistible earthy tones of garlic into freshly prepared mayonnaise creates a ...",
-        price:"180.00"
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/05/12-360x361.jpg",
+        name:"Mexican Sauce",
+        description:"This spicy flavor packed blend serves as the perfect accompaniment with your food",
+        price:"320.00"
+    }, {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/pesto-rosso-4-680x952-1-360x360.jpg",
+        name:"Red Pesto",
+        description:"Amazing flavor our Sun-Dried Tomato Pesto adds to any Appetizer, Soup, Salad or Entree About This Product : ...",
+        price:"350.00"
     },
     
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/DSC_0007-360x359.jpg",
-        name:"Green Pesto Sauce",
-        description:"Our Basil Pesto is an excellent versatile spread that is ready to use. Its combination of ingredients offers ...",
-        price:"320.00"
-    },
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/05/Homemade-Ketchup-3-BoulderLocavore.com_-1-360x360.jpg",
-        name:"Homemade Ketchup",
-        description:"The rich creamy texture of this organic vegan tomato ketchup along with a delicious blend of spices provides ...",
-        price:"260.00"
-    },
-    {
-        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/05/11-360x360.jpg",
-        name:"Honey Mustard Sauce",
-        description:"DELICIOUS and CLASSIC blend of fresh creamy mustard! IMAGINE having this versatile sauce in your pantry. ...",
-        price:"220.00"
-    }
+    
     ]
     var saucesData1 =[
     {
@@ -374,6 +348,7 @@
         price:"320.00"
     },
     ]
+    
     var saucesData5 =[
     {
         img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/pesto-rosso-4-680x952-1-360x360.jpg",
@@ -435,10 +410,9 @@
            displayData(saucesData5)
         }
     }
-    function displayData(saucesData){
+    function displayData(sweetsData){
         document.querySelector("#productList1").innerText=""
-        console.log(saucesData)
-        saucesData.map(function(el){
+        sweetsData.map(function(el){
          var div = document.createElement("div")
          div.setAttribute("class","items")
          var image = document.createElement("img")
@@ -465,7 +439,6 @@
          read.addEventListener("click",function(){
             selectOption(el)
          })
-        // read.style.color="yellowgreen"
          div.append(image,h2,p,price,btn,read);
          document.querySelector("#productList1").append(div)
 
@@ -487,14 +460,13 @@
         document.querySelector("#btn2").style.backgroundColor="yellowgreen"
         window.location.href="saucespage2.html"
        }
-       document.querySelector("#btn3").addEventListener("click",pageNext)
-       function pageNext(){
-        document.querySelector("#btn3").style.backgroundColor="yellowgreen"
-        window.location.href="saucespage2.html"
+       document.querySelector("#btn0").addEventListener("click",pagePrevious)
+       function pagePrevious(){
+        document.querySelector("#btn0").style.backgroundColor="yellowgreen"
+        window.location.href="sauces.html"
        }
        document.querySelector(".cart").addEventListener("click",cartFunction)
        function cartFunction(){
            window.location.href="cart.html"
        }
-       
 </script>

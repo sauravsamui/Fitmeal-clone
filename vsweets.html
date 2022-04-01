@@ -5,10 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan Sweets</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +24,10 @@
         width: 300px;
         margin-left: 850px;
     }
+    #buttons>#btn1{
+        background-color: yellowgreen;
+        color: white;
+    }
 </style>
 <body>
     <div class="header">
@@ -46,37 +46,50 @@
         </div>
         <div>
             <img class="headerImg crat"  src="https://cdn-icons.flaticon.com/png/512/3106/premium/3106797.png?token=exp=1648558957~hmac=0e62dac1b56293c8a2134f3d49dff4cd" alt="">
-        <img  class="headerImg crat" src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="">
-        <img class="headerImg crat"  src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="">
+        <img  class="headerImg crat profile" src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="">
+        <img class="headerImg crat cart"  src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="">
     </div>
     </div>
     <div class="header2">
         <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt=""></div>
         <div class="options">
-            <p>HOME</p>
-            <select name="" id="meal">
-                <option value="">Meal Plans ></option>
-            <option value=""><div>Weight Loss Meal Plan</div></option>
-            <option value="">Maintenance Meal Plan</option>
-            <option value="">Athelatic Meal Plan</option>
-            <option value="">Keto Meal Plan</option>
-            <option value="">Transformation Challenges</option>
-            </select>
-            <p>Health Coaching</p>
-           <select id="product">
-             <option value="prdcts">Products ></option>
-             <option value="prdcts">Products ></option>
-             <option value="vegan">vegan Sweets</option>
-             <option value="saus">Low-Cal Sauces</option>
-             <option value="butter">Nut Butters</option>
-             <option value="bakes">Fresh Bakes</option>
-           </select>
-            <p>Blog</p>
-            <p>About Us ></p>
+           <ul id="tag" type="none">
+            <li><a href="#1">HOME</a></li>
+            <li class="product2"><a href="#2">MEALS ></a>
+              <ul class="insidetag" type="none"> 
+                <li class="meal1"><a href="#3">Weight Loss Meal Plan</a></li> 
+                <li><a href="#4">Maintainance Meal Plan</a></li>
+                <li><a href="#5">Athelatic Meal Plan</a></li>
+                <li><a href="#6">Keto Meal Plan</a></li>
+                <li class="lastmeal"><a href="#7">Transformation Challenges</a></li> 
+              </ul>
+            </li>
+              <li class="product3"><a href="#8">Health Challenges</a></li>
+              <li class="product1"><a href="products.html">Products ></a>
+                <ul class="insidetag insidetag1" type="none">
+                    <li class="meal1"><a href="vsweets.html">Vegan Sweets</a> </li>
+                    <li><a href="sauces.html">Low-Cal Sauces</a></li>
+                    <li><a href="butters.html">Nut Butters</a></li>
+                    <li class="lastmeal"><a href="bakes.html">Fresh Bakes</a></li>
+                </ul>
+            </li>
+             <li class="product4"><a href="#9">Blog</a></li>
+             <li class="product5"><a href="#10">About Us ></a>
+              <ul class="insidetag insidetag1" type="none">
+                  <li class="meal1"><a href="#11"> Our Story</a></li>
+                  <li><a href="#12">FAQ</a></li>
+                  <li class="lastmeal"><a href="#13">Testimonials</a></li>
+
+              </ul>
+            </li>
+            
+           </ul>
+
+>
         </div>
         <div>Call: 9100347480</div>
     </div>
-    <div class="middlebox">vegan Sweets</div>
+    <div class="middlebox">Vegan Sweets</div>
     <div id="productDetails">
         <div class="infoSection">
             <div>
@@ -117,7 +130,7 @@
             <select name="sort" id="sort">
                 <option value="default">Default Sorting</option>
                 <option value="popularity">Sort by popularity</option>
-                <option value="average">sSort by average rating</option>
+                <option value="average">Sort by average rating</option>
                 <option value="latest">Sort by latest</option>
                 <option value="ltoh">Sort by price: low to high</option>
                 <option value="htol">Sort by price: high to low</option>
@@ -129,9 +142,9 @@
         </div>
     </div>
     <div id="buttons">
-        <button>1</button>
-        <button>2</button>
-        <button>></button>
+        <button id="btn1">1</button>
+        <button id="btn2">2</button>
+        <button id="btn3">></button>
     </div>
     <div id="lowerCover">
         <div id="lowerBox">
@@ -189,7 +202,7 @@
         img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/25-360x360.jpg",
         name:"Almond Date Chocolate",
         description:"Delicious Dates stuffed with a Almonds and covered in dark chocolate. With the finest golden almonds at the ...",
-        price:"1,200.00"
+        price:"1200.00"
     },{
         img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/23.jpg",
         name:"Coco Rush",
@@ -217,22 +230,219 @@
         img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/peanut-butter-balls-2-360x360.jpg",
         name:"Peanut Butter Truffles",
         description:"Creamy peanut butter completely coated in dark chocolate — The ultimate snack for those who love all things ...",
-        price:"1,050.00"
-    }
-    
+        price:"1050.00"
+    },
     
     ]
-    
+    var sweetsData1 =[
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/25-360x360.jpg",
+        name:"Almond Date Chocolate",
+        description:"Delicious Dates stuffed with a Almonds and covered in dark chocolate. With the finest golden almonds at the ...",
+        price:"1200.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/24-360x361.jpg",
+        name:"Flax Seed Balls",
+        description:"A crunchy, chocolaty dessert for hunger pangs, Flax Seeds will provide you instant energy. About This Product ...",
+        price:"550.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/snack-nuttyBuddy-300x300-1.jpg",
+        name:"Nutty Butty",
+        description:"Nutty Buddy – These Nutrient-packed nutty treats make for the perfect guilt-free snack … and ...",
+        price:"650.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/23.jpg",
+        name:"Coco Rush",
+        description:"Coco Rush is made with dates, nuts, premium grade cacao and wholesome ingredients. A delicious, healthy ...",
+        price:"550.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/veganhomemadeenergybarsh-360x360.jpg",
+        name:"Energy Bars",
+        description:"Each bar brings a great texture with the energy and nutrients you need.  We keep things sweet by using only ...",
+        price:"750.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/14-360x361.jpg",
+        name:"Protein Brownie",
+        description:"DELICIOUS FLAVORS: A delicious indulgence with decadent flavors! Moist, light, and sweet tasting but without ...",
+        price:"650.00"
+    },
+    ]
+    var sweetsData2=[
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/27-360x360.jpg",
+        name:"Pistachio Date Chocolate",
+        description:"Delicious Dates stuffed with a Pistachios and covered in dark chocolate. With the finest pistachios at the ...",
+        price:"1400.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/7ba24c9efec520a934e394627206dcfe-360x360.jpg",
+        name:"Seed Bars",
+        description:"Superfood Seed Bars – made with 5 different types of seeds are packed full of nutrients – fiber, ...",
+        price:"640.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/28-360x360.jpg",
+        name:"Peanut Chikki",
+        description:"Peanut Chikki or Brittle Candy has a great Natural sweet Taste comes from using Jaggery and peanuts, these ...",
+        price:"450.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/25-360x360.jpg",
+        name:"Almond Date Chocolate",
+        description:"Delicious Dates stuffed with a Almonds and covered in dark chocolate. With the finest golden almonds at the ...",
+        price:"1200.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/24-360x361.jpg",
+        name:"Flax Seed Balls",
+        description:"A crunchy, chocolaty dessert for hunger pangs, Flax Seeds will provide you instant energy. About This Product ...",
+        price:"550.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/snack-nuttyBuddy-300x300-1.jpg",
+        name:"Nutty Butty",
+        description:"Nutty Buddy – These Nutrient-packed nutty treats make for the perfect guilt-free snack … and ...",
+        price:"650.00"
+    },
+    ]
+    var sweetsData3 =[
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/7ba24c9efec520a934e394627206dcfe-360x360.jpg",
+        name:"Seed Bars",
+        description:"Superfood Seed Bars – made with 5 different types of seeds are packed full of nutrients – fiber, ...",
+        price:"640.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/28-360x360.jpg",
+        name:"Peanut Chikki",
+        description:"Peanut Chikki or Brittle Candy has a great Natural sweet Taste comes from using Jaggery and peanuts, these ...",
+        price:"450.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/27-360x360.jpg",
+        name:"Pistachio Date Chocolate",
+        description:"Delicious Dates stuffed with a Pistachios and covered in dark chocolate. With the finest pistachios at the ...",
+        price:"1400.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/24-360x361.jpg",
+        name:"Flax Seed Balls",
+        description:"A crunchy, chocolaty dessert for hunger pangs, Flax Seeds will provide you instant energy. About This Product ...",
+        price:"550.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/snack-nuttyBuddy-300x300-1.jpg",
+        name:"Nutty Butty",
+        description:"Nutty Buddy – These Nutrient-packed nutty treats make for the perfect guilt-free snack … and ...",
+        price:"650.00"
+    },
+    ]
+    var sweetsData4 =[
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/28-360x360.jpg",
+        name:"Peanut Chikki",
+        description:"Peanut Chikki or Brittle Candy has a great Natural sweet Taste comes from using Jaggery and peanuts, these ...",
+        price:"450.00"
+    }, {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/23.jpg",
+        name:"Coco Rush",
+        description:"Coco Rush is made with dates, nuts, premium grade cacao and wholesome ingredients. A delicious, healthy ...",
+        price:"550.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/24-360x361.jpg",
+        name:"Flax Seed Balls",
+        description:"A crunchy, chocolaty dessert for hunger pangs, Flax Seeds will provide you instant energy. About This Product ...",
+        price:"550.00"
+    },
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/7ba24c9efec520a934e394627206dcfe-360x360.jpg",
+        name:"Seed Bars",
+        description:"Superfood Seed Bars – made with 5 different types of seeds are packed full of nutrients – fiber, ...",
+        price:"640.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/14-360x361.jpg",
+        name:"Protein Brownie",
+        description:"DELICIOUS FLAVORS: A delicious indulgence with decadent flavors! Moist, light, and sweet tasting but without ...",
+        price:"650.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/snack-nuttyBuddy-300x300-1.jpg",
+        name:"Nutty Butty",
+        description:"Nutty Buddy – These Nutrient-packed nutty treats make for the perfect guilt-free snack … and ...",
+        price:"650.00"
+    },
+    ]
+    var sweetsData5 =[
+    {
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/27-360x360.jpg",
+        name:"Pistachio Date Chocolate",
+        description:"Delicious Dates stuffed with a Pistachios and covered in dark chocolate. With the finest pistachios at the ...",
+        price:"1400.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/24-360x361.jpg",
+        name:"Flax Seed Balls",
+        description:"A crunchy, chocolaty dessert for hunger pangs, Flax Seeds will provide you instant energy. About This Product ...",
+        price:"550.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/peanut-butter-balls-2-360x360.jpg",
+        name:"Peanut Butter Truffles",
+        description:"Creamy peanut butter completely coated in dark chocolate — The ultimate snack for those who love all things ...",
+        price:"1050.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/veganhomemadeenergybarsh-360x360.jpg",
+        name:"Energy Bars",
+        description:"Each bar brings a great texture with the energy and nutrients you need.  We keep things sweet by using only ...",
+        price:"750.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/snack-nuttyBuddy-300x300-1.jpg",
+        name:"Nutty Butty",
+        description:"Nutty Buddy – These Nutrient-packed nutty treats make for the perfect guilt-free snack … and ...",
+        price:"650.00"
+    },{
+        img_url:"https://www.fitmeals.co.in/wp-content/uploads/2021/06/14-360x361.jpg",
+        name:"Protein Brownie",
+        description:"DELICIOUS FLAVORS: A delicious indulgence with decadent flavors! Moist, light, and sweet tasting but without ...",
+        price:"650.00"
+    },
+    ]
     window.addEventListener("load",function(){
         displayData(sweetsData)
     })
+    document.querySelector("#sort").addEventListener("change",sortFunction)
+    function sortFunction(){
+        var sort= document.querySelector("#sort").value
+        if(sort=="default"){
+            displayData(sweetsData);
+        }
+        else if(sort =="popularity"){
+         displayData(sweetsData1)
+          
+        }
+        else if(sort=="average"){
+                 displayData(sweetsData2)
+        }
+        else if(sort == "latest"){
+            displayData(sweetsData3)
+         
+        }
+        else if(sort == "ltoh"){
+          displayData(sweetsData4)
+        }
+        else if(sort == "htol"){
+           displayData(sweetsData5)
+        }
+    }
     function displayData(sweetsData){
+        document.querySelector("#productList1").innerText=""
         sweetsData.map(function(el){
          var div = document.createElement("div")
          div.setAttribute("class","items")
          var image = document.createElement("img")
          image.src=el.img_url;
          image.setAttribute("class","image")
+         image.addEventListener("click",function(){
+             selectOption(el)
+         })
          var h2 = document.createElement("h3")
          h2.innerText=el.name;
          var p = document.createElement("p")
@@ -243,13 +453,42 @@
          var btn = document.createElement("button")
          btn.setAttribute("class","btn")
          btn.innerText="Select options" 
+         btn.addEventListener("click",function(){
+             selectOption(el)
+         })
          var read = document.createElement("p")
          read.innerText="Read more"
-        // read.style.color="yellowgreen"
+         read.addEventListener("click",function(){
+            selectOption(el)
+         })
          div.append(image,h2,p,price,btn,read);
          document.querySelector("#productList1").append(div)
 
         })
 
     }
+    function selectOption(el){
+        var detail= el
+        localStorage.setItem("ItemDetail",JSON.stringify(detail))
+        window.location.href="details.html"
+    }
+    document.querySelector("#btn1").addEventListener("click",vsweetsPage1)
+       function vsweetsPage1(){
+        document.querySelector("#btn1").style.backgroundColor="yellowgreen"
+        window.location.href="vsweets.html"
+       }
+       document.querySelector("#btn2").addEventListener("click",vsweetsPage2)
+       function vsweetsPage2(){
+        document.querySelector("#btn2").style.backgroundColor="yellowgreen"
+        window.location.href="vsweetspage2.html"
+       }
+       document.querySelector("#btn3").addEventListener("click",pageNext)
+       function pageNext(){
+        document.querySelector("#btn3").style.backgroundColor="yellowgreen"
+        window.location.href="vsweetspage2.html"
+       }
+       document.querySelector(".cart").addEventListener("click",cartFunction)
+       function cartFunction(){
+           window.location.href="cart.html"
+       }
 </script>
