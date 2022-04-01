@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Open+Sans:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<style>
+    h1{
+        color: rgb(209, 199, 199);
+    }
+   
+    #topsection{
+        font-size: 20px;
+        width: 50%;
+       
+        text-align: center;
+        margin: auto;
+        margin-top: 25px;
+        font-family: 'Fira Sans', sans-serif;
+
+
+
+    }
+    #topsection >p {
+font-size: 22px;
+color: rgb(152, 155, 158);
+
+
+    }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:20px;
+        width: 80%;
+        margin: auto;
+      
+   
+    
+       
+    }
+  
+    #container>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-align: center;
+       
+        border-radius: 25px;
+        background-color: #f3f5ed;
+        padding: 1%;
+        font-family: 'Fira Sans', sans-serif;
+
+
+ 
+   
+    }
+    #conatiner>div:hover{
+        background-color: greenyellow;
+    cursor: pointer;
+    }
+    .img{
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition: 1s;
+    }
+    #img{
+        width: 40%;
+        height: 200px;
+        border-radius: 90%;
+        margin-top: 40px;
+    }
+       .img:hover{
+          transform: scale(1.3);
+          z-index: 2;
+       }
+        
+    
+    #box{
+        width: 100%;
+        height: 400px;
+        background: 1px solid blue;
+        margin-left: 105%;
+        background-color:#f3f5ed;
+        font-family: 'Fira Sans', sans-serif;
+
+
+    }
+
+  
+
+@media all and (min-width: 421px) and (max-width:765px){
+#topsection {
+    width: 85%;
+}
+
+}
+@media all and (min-width: 81px) and (max-width:420px){
+#topsection {
+    width: 85%;
+}
+
+}
+#input{
+    width: 250px;
+    height: 50px;
+    margin-left: 80%;
+
+    border-radius:50px;
+    padding-left: 30px;
+    background-color: #f3f5ed;
+
+  
+}
+#low{
+    margin-top: 10%;
+}
+button{
+        background-color:green;
+        border:0;
+        padding:10px 15px;
+        border-radius:10px;
+        color: white;
+    
+        
+        
+}button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+#box1{
+    gap:20px;
+        width: 110%;
+        margin-left: 110%;
+        height:auto;
+        font-family: 'Fira Sans', sans-serif;
+
+
+    
+        
+      
+}
+.line{
+ text-align: start;
+ padding: 5px;
+}
+.divider{
+    width:100%;
+    height: 2px;
+    background-color: green;
+    display: inline-block;
+}
+ul{
+    /* list-style-position: initial; */
+    margin-right: 70%;
+}
+.bottom{
+    width: 90%;
+    
+
+    margin: 2px;
+    padding: 10px;
+    display: flex;
+   
+   
+
+}
+.bimage{
+    width: 80px;;
+    height: 80%;
+    margin-right:auto; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+    
+}
+.bimage:hover{
+    transform: scale(1.3);
+          z-index: 2;
+}
+.bottom>div>div{
+    margin-right: 50%;
+
+ 
+}
+.pdi{
+        text-align: left;
+    text-decoration: solid;
+    text-size-adjust:40%;
+    padding-top: 5px;
+    margin-top: -20px;
+    padding-left: 10px;
+    
+
+    }
+h4{
+   margin-right: 50%;
+   color: green;
+   padding-left:5px ;
+}
+.middle{
+    margin-top: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 400px;
+color:white;
+font-size: 52px;
+font-weight: 700px;
+
+}
+.middle{
+    background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+}
+h2:hover{
+    color: greenyellow;
+    cursor: pointer;
+}
+p:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+</style>
+
+<body>
+    <div class="middle" >Blog</div>
+    <div id="topsection"><h1>
+       Blog
+    </h1>
+  <div> <input  id="input" type="text" name="s" value="" placeholder="Search"></div> 
+  
+
+    </div>
+    
+    <div id="container">
+        <div>
+            <img class="img" src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/unnamed.jpg">
+            <button>Unorganised</button>
+            <h2> Fitmeals India Collaboration With Nestle a+ Grekyo</h2>
+          
+            <p>
+                We’re excited to announce our collaboration with Nestle a+. Now you can get a Nestle a+ Grekyo with every breakfast meal! Wh …
+            </p>
+          
+        </div>
+        <div > 
+            <img  class="img" src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/mangoes-1320111_640.jpg"
+            >
+            <button>Nutriton</button>
+        
+            <h2> 5 reasons why you should eat mangoes- Myth busting Mondays</h2>
+           
+            <p>The mango season is nearing an end right now and if for any reason you’ve avoided mangos like a plague then this article is just f …
+            </p>
+        </div>
+           
+        <div id="low"> 
+          
+            <img  id="img" src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/38387CD2-DC0A-4974-9C4C-2A50BE34899C-1-169x300.jpg"
+            >
+            <h2> Hafsaa</h2>
+            
+            <i> Nutrition blogger</i>
+            <p>
+                Passionate about anything related to health and fitness and loves to bust ridiculous diet myths using evidence based explanations.
+            </p>
+            
+    </div>
+
+    <div  id="box">
+
+        <img class="img"  src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/man-461195_640.jpg">
+        <button>Nutriton</button>
+        
+        <h2> A guide to clean bulking</h2>
+      
+        <p>
+            Want to gain weight or build muscle? The only solution is to eat surplus. Contrary to what most people think, it’s actually very har …
+        </p>
+
+    </div>
+    <div id="box1">
+  <h3 class="line">Categories
+    <span class="divider"></span>
+  </h3>
+  
+  <ul>
+    <li >Nutrition</li>  
+    <hr>
+    <li>Uncategories</li>
+    
+  </ul>
+  <h3 class="line">Recent Post
+    <span class="divider">
+  </h3>
+  <div class="bottom">
+<div><img class="bimage" src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/unnamed.jpg "></div>
+   <div><h4>Uncategories</h4>
+    <P class="pdi">Fitmeals India Collaboration With Nestle a+ Grekyo</P></div>  
+     </div>
+
+      <div class="bottom"> <div><img class="bimage" src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/mangoes-1320111_640-150x150.jpg">
+      </div> 
+      <div> <h4>Nutrition</h4>
+        <P class="pdi">5 reasons why you should eat mangoes- Myth busting Mondays</P></div> 
+          </div>
+           <div class="bottom"> <div><img class="bimage" src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/man-461195_640-150x150.jpg"></div>
+        <div> <h4>Nutrition</h4>
+            <P class="pdi">A guide to clean bulking</P></div> 
+            
+       </div>
+       <button>view more</button>
+</body>
+</html>
