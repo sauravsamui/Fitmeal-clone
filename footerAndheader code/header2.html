@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .header2>div:last-child{
+    margin-top: -10px;
+    height:50px;
+   display: flex;
+    padding: 0px 40px 0px 40px;
+    border-radius:30px;
+    color:white;
+    background-color:#da2424;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800px;
+  
+}
+.header2>div:last-child:hover{
+    background-color: #8ec038
+}
+.sticky{
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
+     background-color: white;
+    align-items: center;
+     height: 80px;
+     margin-top:-5px;
+     padding-top: 55px;
+     padding-bottom:45px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+     #tag>li{
+         float: left;
+         width:150px;
+         height:40px;
+     
+      font-family: 'Fira Sans', sans-serif;
+     
+     }
+     ul li a{
+         text-decoration: none;
+     }
+     #tag>li>a,.insidetag>li>a{
+         text-decoration: none;
+         display: block;
+         color:black
+
+     }
+     #tag>li>a:hover{
+        color: yellowgreen;
+        text-decoration: underline;
+         
+     }
+    .meal1{
+        margin-top: 10px;
+    }
+    .lastmeal{
+        margin-bottom:50px;
+    }
+
+     .insidetag>li{
+         float:left;
+        height:5px;
+         width:300px;
+         margin-left: -170px;
+         background-color: white;
+         padding: 15px 20px 35px 10px;
+
+         font-family: 'Fira Sans', sans-serif;
+         
+     }
+     .insidetag1 >li{
+       width:250px
+     }
+     .insidetag>li>a{
+         padding: 5px;
+         padding-left: 20px;
+     }
+     .insidetag>li>a:hover{
+         background-color: yellowgreen;
+         border-radius: 30px;
+         color: white;
+     }
+     #tag>li .insidetag>li{
+         display: none;
+     }
+     #tag>li:hover .insidetag>li{
+         display: block;
+         
+     }
+     .product1{
+         margin-left: 20px;
+     }
+     .product2{
+         margin-left: -70px;
+     }
+     .product3{
+         margin-left: -50px;
+     }
+     .product4{
+         margin-left: -30px;
+     }
+     .product5{
+         margin-left: -60px;
+     }
+  </style>
+<body>
+    <div class="header2">
+        <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt=""></div>
+        <div class="options">
+           <ul id="tag" type="none">
+            <li><a href="#1">HOME</a></li>
+            <li class="product2"><a href="#2">MEALS ></a>
+              <ul class="insidetag" type="none"> 
+                <li class="meal1"><a href="#3">Weight Loss Meal Plan</a></li> 
+                <li><a href="#4">Maintainance Meal Plan</a></li>
+                <li><a href="#5">Athelatic Meal Plan</a></li>
+                <li><a href="#6">Keto Meal Plan</a></li>
+                <li class="lastmeal"><a href="#7">Transformation Challenges</a></li> 
+              </ul>
+            </li>
+              <li class="product3"><a href="#8">Health Challenges</a></li>
+              <li class="product1"><a href="products.html">Products ></a>
+                <ul class="insidetag insidetag1" type="none">
+                    <li class="meal1"><a href="vsweets.html">Vegan Sweets</a> </li>
+                    <li><a href="sauces.html">Low-Cal Sauces</a></li>
+                    <li><a href="butters.html">Nut Butters</a></li>
+                    <li class="lastmeal"><a href="bakes.html">Fresh Bakes</a></li>
+                </ul>
+            </li>
+             <li class="product4"><a href="#9">Blog</a></li>
+             <li class="product5"><a href="#10">About Us ></a>
+              <ul class="insidetag insidetag1" type="none">
+                  <li class="meal1"><a href="#11"> Our Story</a></li>
+                  <li><a href="#12">FAQ</a></li>
+                  <li class="lastmeal"><a href="#13">Testimonials</a></li>
+
+              </ul>
+            </li>
+            
+           </ul>
+        </div>
+        <div>Call: 9100347480</div>
+    </div>
+</body>
+</html>
+<script>    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.querySelector(".header2");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      } 
+    }
+    </script>

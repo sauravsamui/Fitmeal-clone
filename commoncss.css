@@ -37,13 +37,108 @@
   margin-top: 50px;
   font-family: 'Fira Sans', sans-serif;
   cursor: pointer;
-  font-size: 18px;
+ 
+  
+}
+#tag>li{
+    float: left;
+    width:150px;
+    height:40px;
+ 
+ font-family: 'Fira Sans', sans-serif;
+
+}
+ul li a{
+    text-decoration: none;
+}
+#tag>li>a,.insidetag>li>a{
+    text-decoration: none;
+    display: block;
+    color:black
+
+}
+#tag>li>a:hover{
+   color: yellowgreen;
+   text-decoration: underline;
+    
+}
+.meal1{
+   margin-top: 10px;
+}
+.lastmeal{
+   margin-bottom:50px;
+}
+
+.insidetag>li{
+    float:left;
+   height:5px;
+    width:300px;
+    margin-left: -190px;
+    background-color: white;
+    padding: 15px 30px 38px 10px;
+    overflow: hidden;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.insidetag1 >li{
+  width:250px
+}
+.insidetag>li>a{
+    padding: 5px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+.insidetag>li>a:hover{
+    background-color: yellowgreen;
+    border-radius: 30px;
+    color: white;
+    
+     
+}
+#tag>li .insidetag>li{
+    display: none;
+}
+#tag>li:hover .insidetag>li{
+    display: block;
+    
+}
+.product1{
+    margin-left: 20px;
+}
+.product2{
+    margin-left: -70px;
+}
+.product3{
+    margin-left: -50px;
+}
+.product4{
+    margin-left: -30px;
+}
+.product5{
+    margin-left: -70px;
+}
+.sticky{
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
+     background-color: white;
+    align-items: center;
+     height: 80px;
+     margin-top:-5px;
+     padding-top: 55px;
+     padding-bottom:45px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
 }
 
 .options{
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content:center;
+    width: 60%;
+    margin-right: -100px;
+    padding-left: 50px;
+    
 }
 
 .header2>div>img{
@@ -57,7 +152,7 @@ select{
     border:none;
     width:none;
     cursor: pointer;
-    width:150px;
+    width:100px;
     -webkit-appearance: none;
     margin-top: -15px;
    
@@ -77,10 +172,6 @@ select{
 }
 .header2>div:last-child:hover{
     background-color: #8ec038
-}
-.options>p:hover{
-    color: #8ec038;
-    text-decoration: underline;
 }
 
 .middlebox{
@@ -115,7 +206,7 @@ margin-left: 40px;
 }
 .productSection{
     width: 60%;
-    
+    margin-right: 50px;
     
 }
 .productSection>div:first-child{
@@ -142,10 +233,13 @@ margin-left: 40px;
 }
 .image{
     width:100%;
-    height: 40%;
+    height: 35%;
     border-radius: 30px;
     cursor: pointer;
-
+   
+}
+.image:hover{
+    transform:scale(1.1);
 }
 .items{
 text-align: center;
@@ -213,7 +307,6 @@ input{
     font-family: 'Open Sans', sans-serif;
 }
 #category,#cart{
-    /* font-weight: bold; */
     
     margin-top: 70px;
 }
@@ -249,7 +342,7 @@ ul>li:hover{
 #buttons{
     width:550px;
     margin-top: 100px;
-    margin-left:750px;
+    margin-left:650px;
     display: flex;
     justify-content: space-around;
 }
@@ -259,6 +352,7 @@ ul>li:hover{
     background-color:whitesmoke ;
     border: none;
     font-family: 'Fira Sans', sans-serif;
+    font-size: large;
 }
 #buttons>button:hover{
    background-color:  #292d35;
