@@ -1,0 +1,447 @@
+
+
+.header{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    justify-content: space-around;
+    padding-top: 10px;
+    height:50px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    
+}
+.info{
+  
+    display: inline-block;
+    display: flex;
+    width: 60%;
+    margin-left: -50px;
+}
+.headerImg{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 30px;
+
+}
+.infopara{
+    display:inline-block;
+    margin-left: 5px;
+}
+.number{
+    font-weight: bold;
+}
+.header2{
+    display: flex;
+    justify-content: space-around;
+  margin-top: 50px;
+  font-family: 'Fira Sans', sans-serif;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.header2>div>img{
+    width: 90px;
+    height: 50px;
+    margin-left: -20px;
+    margin: -10px;
+
+}
+select{
+    border:none;
+    width:none;
+    cursor: pointer;
+    width:150px;
+    -webkit-appearance: none;
+    margin-top: -15px;
+   
+}
+.header2>div:last-child{
+    margin-top: -10px;
+    height:50px;
+   display: flex;
+    padding: 0px 40px 0px 40px;
+    border-radius:30px;
+    color:white;
+    background-color:#da2424;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800px;
+  
+}
+.header2>div:last-child:hover{
+    background-color: #8ec038
+}
+.options>p:hover{
+    color: #8ec038;
+    text-decoration: underline;
+}
+
+.middlebox{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: white;
+    background-color: #292d35;
+    font-family: 'Fira Sans', sans-serif;
+     font-size: 52px;
+     font-weight: 700px;
+   
+}
+select:hover{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+#productDetails{
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+.infoSection{
+    width:28%;
+    height:auto;
+margin-left: 40px;
+
+
+}
+.productSection{
+    width: 60%;
+    
+    
+}
+.productSection>div:first-child{
+    display: flex;
+    padding: 20px 30px 10px 30px;
+    background-color: #f3f5ed;
+     border-radius: 30px;
+     font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    justify-content: space-between;
+ 
+}
+#sort{
+    background-color:#f3f5ed ;
+    width: auto;
+    
+}
+#productList1{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+}
+.image{
+    width:100%;
+    height: 40%;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.items{
+text-align: center;
+line-height: 30px;
+padding: 10px;
+font-family: 'Fira Sans', sans-serif;
+}
+.items>h3{
+    margin-top: 30px;
+    cursor:pointer
+}
+.items>h3:hover{
+    color:yellowgreen
+}
+.btn{
+    color:white;
+    background-color: #da2424;
+    font-weight: bold;
+    border:none;
+    border-radius: 30px;
+    padding:10px 40px;
+    font-size:large;
+    margin-top: 20px;
+}
+.btn:hover{
+    background-color: yellowgreen;
+    color:white
+}
+.items>p~p{
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    color: yellowgreen;
+}
+.items>p~p:hover{
+    
+    color:rgb(26, 25, 25)
+}
+.items>h3+p{
+    font-family: 'Open Sans', sans-serif;
+}
+.icon{
+    font-size: 25px;
+    font-weight: 30px;
+    cursor: pointer;
+   text-align: center;
+   margin-top: 15px;
+}
+.icon:hover{
+    color: yellowgreen;
+}
+input{
+    width:90%;
+    height: 50px;
+    border: none;
+     font-size: large;
+    -webkit-appearance: none;
+}
+.infoSection>div:nth-child(1){
+    border:1px solid grey;
+    height: 70px;
+    border-radius: 40px;
+    padding: 0px 20px 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+#category,#cart{
+    /* font-weight: bold; */
+    
+    margin-top: 70px;
+}
+#category>h4,#category>hr,#cart>h4,#cart>hr{
+    font-family: 'Fira Sans', sans-serif;
+    margin-left: 35px;
+    
+}
+#category>hr,#cart>hr{
+     border: 1px solid green;
+}
+.arrow{
+    color: yellowgreen;
+    font-size: 13px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    padding-right: 5px;
+}
+ul>li{
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+ul>li:hover{
+    color:yellowgreen
+}
+#cart>p{
+    margin-left: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+#buttons{
+    width:550px;
+    margin-top: 100px;
+    margin-left:750px;
+    display: flex;
+    justify-content: space-around;
+}
+#buttons>button{
+    padding: 25px 35px;
+    border-radius:55%;
+    background-color:whitesmoke ;
+    border: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+#buttons>button:hover{
+   background-color:  #292d35;
+   color: white;
+}
+#lowerCover{
+    background-color: #292d35;
+  height:650px
+}
+#lowerBox{
+  margin-top:200px;
+  height: 80%;
+    display: flex;
+   
+    justify-content: space-evenly;
+    padding: 30px;
+   background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2019/10/footer-bg.png");
+}
+#lowerBox>div{
+    width:22%;
+    display:block
+}
+#lowerBox>div>p{
+    color: grey;
+    margin-top: 30px;
+    width: 65%;
+    text-align: justify;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 17px;
+}
+.arrow1{
+  color:white;
+  background-color: yellowgreen;
+  font-size:35px;
+  margin-left: 10px;
+  border-radius: 55%;
+  margin-top: 10px;
+ 
+
+}
+
+#lowerBox>div>h2{
+    color:yellowgreen;
+    font-family: 'Fira Sans', sans-serif;
+} 
+.gap{
+    margin-top: 50px;
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+}
+.lesgap{
+    color: white;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.nogap{
+    color: white;
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+#lowerCover>div:last-child{
+    margin-top: 70px;
+    height:60px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;      }
+#lowerCover>div:last-child>p{
+    color:white;
+    margin-top:40px;
+    margin-left: 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+span{
+    color:yellowgreen
+}
+span:hover{
+    color:red;
+    cursor: pointer;
+}
+
+/* ................................header2......................................... */
+
+.header2>div:last-child{
+    margin-top: -10px;
+    height:50px;
+   display: flex;
+    padding: 0px 40px 0px 40px;
+    border-radius:30px;
+    color:white;
+    background-color:#da2424;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800px;
+  
+}
+.header2>div:last-child:hover{
+    background-color: #8ec038
+}
+.sticky{
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
+     background-color: white;
+    align-items: center;
+     height: 80px;
+     margin-top:-5px;
+     padding-top: 55px;
+     padding-bottom:45px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+     #tag>li{
+         float: left;
+         width:150px;
+         height:40px;
+     
+      font-family: 'Fira Sans', sans-serif;
+     
+     }
+     ul li a{
+         text-decoration: none;
+     }
+     #tag>li>a,.insidetag>li>a{
+         text-decoration: none;
+         display: block;
+         color:black
+
+     }
+     #tag>li>a:hover{
+        color: yellowgreen;
+        text-decoration: underline;
+         
+     }
+    .meal1{
+        margin-top: 10px;
+    }
+    .lastmeal{
+        margin-bottom:50px;
+    }
+
+     .insidetag>li{
+         float:left;
+        height:5px;
+         width:300px;
+         margin-left: -170px;
+         background-color: white;
+         padding: 15px 20px 35px 10px;
+
+         font-family: 'Fira Sans', sans-serif;
+         
+     }
+     .insidetag1 >li{
+       width:250px
+     }
+     .insidetag>li>a{
+         padding: 5px;
+         padding-left: 20px;
+     }
+     .insidetag>li>a:hover{
+         background-color: yellowgreen;
+         border-radius: 30px;
+         color: white;
+     }
+     #tag>li .insidetag>li{
+         display: none;
+     }
+     #tag>li:hover .insidetag>li{
+         display: block;
+         
+     }
+     .product1{
+         margin-left: 20px;
+     }
+     .product2{
+         margin-left: -70px;
+     }
+     .product3{
+         margin-left: -50px;
+     }
+     .product4{
+         margin-left: -30px;
+     }
+     .product5{
+         margin-left: -60px;
+     }
+ 
