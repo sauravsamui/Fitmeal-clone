@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+    
+    
+    <style>
+        #container{
+           
+            height: 400px;
+            width: 100%;
+            margin-top: 20px;
+            background-color: rgb(43, 34, 34);
+            /* text-align: center; */
+        }
+        #container>h1{
+           padding: 150px;
+            font-size: 40px;
+            color:white;
+            text-align: center;
+            font-family: 'Fira Sans', sans-serif;
+           
+        }
+        #container>img{
+            height: 100%;
+            width: 100%;
+            filter: brightness(50%);
+          filter: blur(20%);
+        }
+        #medium-section{
+            display: flex;
+            width: 80%;
+            height: 500px;
+            margin-top: 100px;
+            margin: auto;
+        } 
+    #medium-section p{
+        color: grey;
+        font-weight: bold;
+    }
+        #medium-section>div{
+            height: 80%;
+            width: 45%;
+            margin-left: 15px;
+            margin-top: 60px;
+        }
+        #medium-section>div>img{
+            height: 100%;
+            width: 100%;
+        }
+        #medium-section input{
+            color: grey;
+        }
+        #red{
+            color: red;
+        }
+        #bottom-section{
+            margin-top: 10px;
+            height: 50px;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .red{
+            color: white;
+            background-color: #da2429;
+            height: 40px;
+            width: 120px;
+            border: #da2429;
+            border-radius: 20px;
+            font-weight: bold;
+
+        }
+        .red:hover{
+            background-color: #8ec038;
+            color: white;
+            cursor: pointer;
+        }
+        h4{
+            /* text-align: center; */
+            margin-top: 50px;
+        }
+        #size-line{
+            width: 10%;
+            color: #da2429;
+            margin: auto;
+        }
+        #description{
+            height: 500px;
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+        }
+        #description p{
+            font-size: 15px;
+        }
+       #description>li{
+           font-size: 15px;
+           font-weight: bold;
+           line-height: 2.0;
+       }
+       #related-products{
+           height: 450px;
+           width: 80%;
+           margin: auto;
+           display: flex;
+           justify-content: space-around;
+           /* margin-top: 50px; */
+          
+
+       }
+       h1{
+           text-align: center;
+           margin-top: 50PX;
+       }
+       #related-products>div{
+        font-family: 'Fira Sans', sans-serif;
+           height: 80%;
+           width: 350px;
+          border-radius: 20px;
+          margin-top: 20px;
+       }
+       #related-products>div>img{
+           height: 100%;
+           width: 100%;
+           border-radius: 15px;
+       }
+       #related-products>div>img:hover{
+           transform: scale(1.1);
+       }
+.p-heading{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+    font-family: 'Fira Sans', sans-serif;;
+}
+.p-heading:hover{
+    color: #8ec038;
+    cursor: pointer;
+}
+.red2{
+    color: #da2429;
+    text-align: center;
+}
+.btn{
+    color: white;
+            background-color: #da2429;
+            height: 50px;
+display: block;
+            width: 150px;
+            border: #da2429;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: auto;
+           
+}
+.btn:hover{
+            background-color: #8ec038;
+            color: white;
+            cursor: pointer;
+}
+#related-products p{
+    text-align: center;
+    color: #8ec038;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#related-products p:hover{
+color: black;
+cursor: pointer;
+}
+.desc{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#description{
+    margin-top: 79px;
+}
+#dish{
+    color: white;
+    background-color:grey;
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 40px;
+}
+#dish:hover{
+    background-color: black;
+    color: white;
+}
+         </style>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="info">
+            
+           <div><img class="headerImg" src="https://cdn-icons-png.flaticon.com/512/3892/3892652.png" alt="">
+               <p class="infopara">Food delivery only in Hyderabad</p></div> 
+           <div>
+               <img class="headerImg"  src="https://cdn-icons.flaticon.com/png/512/1538/premium/1538493.png?token=exp=1648558272~hmac=37d03bb136553ec170371cb2055394a6" alt="">
+              <p class="infopara number">9100347480<p>
+            </div>
+            <div>
+                <img  class="headerImg" src="https://cdn-icons-png.flaticon.com/512/747/747483.png" alt="">
+                    <p class="infopara">fitmealsindia@gmail.com</p>
+            </div>
+        </div>
+        <div>
+            <img class="headerImg crat"  src="https://cdn-icons.flaticon.com/png/512/3106/premium/3106797.png?token=exp=1648558957~hmac=0e62dac1b56293c8a2134f3d49dff4cd" alt="">
+        <img  class="headerImg crat" src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="">
+        <img class="headerImg crat"  src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="">
+    </div>
+    </div>
+ 
+  <!-- .........................  header2..................................... -->
+
+  <div class="header2">
+    <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt=""></div>
+    <div class="options">
+       <ul id="tag" type="none">
+        <li><a href="file:///E:/Fit%20meal%20clone/index.html">HOME</a></li>
+        <li class="product2"><a href="#2">MEALS ></a>
+          <ul class="insidetag" type="none"> 
+            <li class="meal1"><a href="file:///E:/Fit%20meal%20clone/meal.html">Weight Loss Meal Plan</a></li> 
+            <li><a href="#4">Maintainance Meal Plan</a></li>
+            <li><a href="#5">Athelatic Meal Plan</a></li>
+            <li><a href="#6">Keto Meal Plan</a></li>
+            <li class="lastmeal"><a href="#7">Transformation Challenges</a></li> 
+          </ul>
+        </li>
+          <li class="product3"><a href="#8">Health Challenges</a></li>
+          <li class="product1"><a href="products.html">Products ></a>
+            <ul class="insidetag insidetag1" type="none">
+                <li class="meal1"><a href="vsweets.html">Vegan Sweets</a> </li>
+                <li><a href="sauces.html">Low-Cal Sauces</a></li>
+                <li><a href="butters.html">Nut Butters</a></li>
+                <li class="lastmeal"><a href="bakes.html">Fresh Bakes</a></li>
+            </ul>
+        </li>
+         <li class="product4"><a href="#9">Blog</a></li>
+         <li class="product5"><a href="#10">About Us ></a>
+          <ul class="insidetag insidetag1" type="none">
+              <li class="meal1"><a href="#11"> Our Story</a></li>
+              <li><a href="#12">FAQ</a></li>
+              <li class="lastmeal"><a href="#13">Testimonials</a></li>
+
+          </ul>
+        </li>
+        
+       </ul>
+    </div>
+    <div>Call: 9100347480</div>
+</div>
+</body>
+</html>
+<script>    window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector(".header2");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  } 
+}
+</script>
+
+<!-- .................................................... -->
+
+    <div id="container">
+        <h1>1 Week weight Loss Plan</h1>
+    </div>
+
+    <div id="medium-section">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/131656388_2928339300783531_1455339526998620196_n-600x570.jpg" alt="">
+        </div>
+        <div>
+            <h3 id="red"> ₹0.00</h3>
+          <h4>Starting from 1980 /-</h4>
+<br>
+        <p>Meal preference <span id="red">*</span></p>
+
+        <!-- <input type="checkbox" id="non-veg" name="non-veg"
+          checked>
+   <label for="non-veg">non-veg</label> -->
+   <select name="dish" id="dish">
+       <option value="select">--select --</option>
+       <option value="veg">veg<option>
+       <option value="non-veg">non-veg</option>
+   </select>
+<!-- 
+   <br>
+
+   <input type="checkbox" id="Veg" name="Veg"
+          unchecked>
+   <label for="Veg">Veg</label>
+   <br>
+
+   <p>Choice <span id="red">*</span></p>
+   <input type="checkbox" id="Breakfast" name="Breakfast"
+          unchecked>
+   <label for="Breakfast">Breakfast +Rs-1,980.00</label>
+   <br>  
+         
+
+   <input type="checkbox" id="lunch" name="lunch"
+   unchecked>
+<label for="lunch">Lunch +Rs-1,980.00</label>
+<br>
+<input type="checkbox" id="dinner" name="dinner"
+unchecked>
+<label for="dinner">Dinner +Rs-1,980.00</label>
+<br>
+<p>Add Snack/Drink</p>
+
+<input type="checkbox" id="Snack" name="Snack"
+unchecked>
+<label for="Snack">Snack</label>
+<br>
+<input type="checkbox" id="Drink" name="Drink"
+unchecked>
+<label for="Drink">Drink</label> -->
+
+<div id="bottom-section">
+    
+    <div>
+        <button class="red">Add To Cart</button>
+    </div>
+
+</div>
+  </div>
+
+        
+    </div>
+    <!-- Description -->
+
+    <div id="description">
+    <h4 class="desc" >Description</h4>
+    <hr id="size-line">
+    <h5>    Here’s what you get with our weight loss meal plan :</h5>
+    <p>-Freshly prepared, preservative free, ready to eat meals delivered to you</p>
+    <p>-100% healthy meals free from refined sugars & trans fats.</p>
+    <p>-Different menu every day which includes a perfect blend of cuisines</p>
+    <p>-Flexibility of plans; pause your plans or cancel meals according to your schedule. (Within the validity period)</p>
+<p>-Ongoing nutritionist support and consultations.</p>
+
+<br>
+<h4>Please note:</h4>
+<ul type="disc"></ul>
+<li>Orders will commence from the next working day</li>
+<li>We do not deliver on Sundays (1 Week plan= 6 days)</li>
+<li>All payments are collected on the first day of your meals.</li>
+<li>We have a strict No-refund policy</li>
+</div>
+
+<!-- related products -->
+
+<h1>Realted products</h1>
+<div id="related-products">
+
+<div>
+    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/06/81ADE253-AC27-48D3-B9DA-6D8863E52C3B-360x360.jpeg
+    " alt="">
+    <h2 class="p-heading"> 10 Week Transformation Challange</h2>
+    <h2 class="red2"> ₹49,000.00</h2>
+  
+   <button  class="btn">Add To Cart</button>
+   <p>Read More</p>
+
+</div>
+<div>
+    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/120202323_1261589670872020_6790947016248641564_n-1-360x351.jpg" alt="">
+    <h2 class="p-heading"> 1 Week Atheletic plan</h2>
+    <h2 class="red2">₹0.00</h2>
+    <button class="btn">Add to cart</button>
+    <p>Read More</p>
+</div>
+<div>
+    <img src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/IMG_0148-360x337.jpg" alt="">
+    <h2 class="p-heading"> 2 Week Keto plan</h2>
+    <h2 class="red2">₹0.00</h2>
+    <button class="btn">Select Options</button>
+    <p>Read More</p>
+</div>
+
+</div>
+
+
+<div id="lowerCover">
+    <div id="lowerBox">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"/>
+            <p>The Fitmeals culinary team consists of very passionate and skilled chefs. Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+           <div><i class="fa-brands fa-twitter lowicon arrow1"></i>
+            <i class="fa-brands fa-facebook lowicon arrow1"></i>
+            <i class="fa-brands fa-instagram lowicon arrow1"></i>
+        </div>
+        </div>
+        <div><h2>Explore</h2>
+            <ul  type="none">
+                <li class="gap"><i class="fa-solid fa-greater-than arrow"></i> Home</li>
+                <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Meal Plans</li>
+              </ul>
+        </div>
+        <div>
+            <h2>Links</h2>
+            <ul  type="none">
+                <li class="gap"><i class="fa-solid fa-greater-than arrow"></i> About Us</li>
+                <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Blog </li>
+                <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> FAQ </li>
+                <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Testimonials </li>
+            </ul>
+        </div>
+        
+         <div>
+            <h2>Contact</h2>
+            <ul  type="none">
+                <li class="gap"><i class="fa-solid fa-phone-volume arrow"></i> Call Us:</li>
+                <ul type="none">
+                    <li class="nogap">9100347480</li>
+                    <li class="nogap">9963697412</li>
+                </ul>
+                <li class="gap"><i class="fa-solid fa-envelope arrow"></i> Email Us:</li>
+                <ul type="none">
+                    <li class="nogap">fitmealsindia@gmail.com</li>
+                </ul>
+                <li class="gap"><i class="fa-solid fa-location-dot arrow"></i> Our Location</li>
+                <ul type="none">
+                    <li class="nogap">Banjara Hills, Road no.5,</li>
+                    <li class="nogap">Hyderabad</li>
+                </ul>
+            </ul>
+         </div>
+    </div>
+    <div><p>Copyright © 2021.<span>FitMeals</span>. All Rights Reserved.</p></div>
+</div>
+</body>
+</html>
