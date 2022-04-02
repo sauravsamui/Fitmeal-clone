@@ -157,7 +157,7 @@ table td,tbody{
         <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt=""></div>
         <div class="options">
            <ul id="tag" type="none">
-            <li><a href="#1">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li class="product2"><a href="#2">MEALS ></a>
               <ul class="insidetag" type="none"> 
                 <li class="meal1"><a href="#3">Weight Loss Meal Plan</a></li> 
@@ -294,9 +294,9 @@ table td,tbody{
            return acu + Number(el.price)
        },0)
 
-       
-       document.querySelector("#total").innerText="₹"+(total+50)
-
+       total = total +50
+       document.querySelector("#total").innerText="₹"+total
+        localStorage.setItem("totalAmount",total)
        var flag = localStorage.getItem("loginFlag")
        function cart(){
            if(flag=="false"|| flag == null){
@@ -364,11 +364,13 @@ table td,tbody{
            }
            var coupon = document.querySelector("#coupon").value
            if(coupon == "masai30"){
-               total = Math.ceil(total -(total*30/100))+50
+               var total1 = localStorage.getItem("totalAmount")
+               total1 = Math.ceil(total -(total*30/100))+50
+               localStorage.setItem("totalAmount",total1)
            document.querySelector("#applied").style.marginLeft ="10px"
            document.querySelector("#applied").style.color ="red"
            document.querySelector("#applied").innerText="Coupon Applied!"
-           document.querySelector("#total").innerText="₹"+total
+           document.querySelector("#total").innerText="₹"+total1
            count++
            }
            else{

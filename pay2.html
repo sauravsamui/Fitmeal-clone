@@ -112,104 +112,67 @@
      .product5{
          margin-left: -60px;
      }
-     span>a,span{
-         text-decoration: none;
-         color: black;
-     }
-     span>a:hover{
-         color: yellowgreen;
-     }
-     span:hover{
-         color: yellowgreen;
-     }
-     .login{
-         height:55px;
-         width:60%;
-         margin:auto;
-         padding:15px 0px 0px 15px;
-         margin-top:30px;
-         background-color: whitesmoke;
-         border-radius: 20px;
-     }
-     .login1{
-         margin-top: 100px;
-     }
-     #check{
-         display:inline-block;
-         -webkit-appearance: checkbox;
-         height:12px;
-         width:12px;
-         margin-right: 5px;
-     }
-     .login2{
-         border:none;
-         background-color:white;
-     }
-     .login2>h1{
-        display: inline-block;
-        font-family: 'Fira Sans', sans-serif;
-        margin-left: -20px;
-     }
-     .ship{
-         margin-left: 160px;
-     }
-     label>h6{
-       display: inline-block;
-     }
-     #state{
-     margin-right: 10px;
-     border: 1px solid grey;
-     padding-left: 10px;
-     
-     }
-     #billing{
-         margin: auto;
-         width:57%;
-         margin-top: 10px;
-     }
-     input{
-       border: 1px solid grey;
-     }
-     label{
-         margin-top: 20px;
-     }
-     .name{
-         width:150px;
-         border-radius: 30px;
-         height: 60px;
-     }
-     .lastname{
-         margin-left: 50px;
-     }
-     .lastname1{
-         margin-left: 120px;
-     }
-     .company{
-         width:350px;
-         border-radius: 30px;
-         height: 60px;
-         padding-left: 10px;
-     }
-     h6+span{
-         color: red;
-     }
-     option{
-         margin-top: 10px;
-        
-     }
-    #submit{
-        width:200px;
-       margin-top: 20px;
-      border-radius:30px;
-      background-color: yellowgreen;
-      font-family: 'Fira Sans', sans-serif;
-      color: white;
-      border:none
-    } 
-    #submit:hover{
-        background-color: #292d35;
-       
-    }
+     #container{
+            width:30%;
+            margin:auto;
+            height: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding:30px;
+            margin-top: 20px;
+        }
+        input{
+            height:50px;
+            color: grey;
+            font-size: larger;
+            margin-top: 10px;
+            font-family: 'Inter', sans-serif;
+         font-family: 'Poppins', sans-serif;
+        }
+        #container>form>input:nth-child(1){
+            width:300px;
+            border: 1px solid whitesmoke;
+            
+        }
+        #container>form>input:nth-child(3){
+            width:300px;
+            border: 1px solid whitesmoke;
+        }
+
+        #container>form>input:nth-child(4){
+            width:110px;
+            margin-left: 10px;
+            border: 1px solid whitesmoke;
+        }
+        #container>form>input:nth-child(6){
+            width:150px;
+            border: 1px solid whitesmoke;
+
+        }
+        #container>form>input:nth-child(7){
+            width:270px;
+            margin-left: 10px;
+            color: white;
+            background-color:rgb(236, 83, 27);
+            border: none;
+            cursor:pointer;
+            border-radius: 30px;
+        }
+        #card{
+           font-size: larger;
+        }
+         #payment{
+            font-family: 'Fira Sans', sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: -240px;
+         }
+         #invalid{
+             margin-top:10px;
+             font-family: 'Fira Sans', sans-serif;
+            text-align: center;
+            margin-left: -240px;
+            color: red;
+         }
   </style>
 </head>
 <body>
@@ -272,63 +235,23 @@
         <div>Call: 9100347480</div>
     </div>
     <div class="middlebox">Checkout</div>
-
-    <div class="login login1"><p><i class="fa-regular fa-calendar arrow"></i>Returning customer?<span><a href="login.html">Click here to login</a> </span></p></div>
-    <div class="login"><p><i class="fa-regular fa-calendar arrow"></i>Have a coupon?<span> Click here to enter your code</span></p></div>
-    <div class="login login2"><h1>Billing details</h1>
-        <input id="check"  class="ship" type="checkbox">
-        <label  for=""><h6> Ship to a different address?</h6></label>
-    </div>
     
-    <div id="billing">
-        <form action="">
-            <label for=""><h6>First name</h6><span> *</span></label>
-            <label class="lastname1" for=""><h6>Last name</h6><span> *</span></label>
+    <h1 id="payment">Payment</h1>
+    <div id="container">
+        <p id="card">Credit / Debit / ATM Card</p>
+        <form>
+            <input id="number" type="text" placeholder="  Enter Card Number">
             <br>
-            <input class="name" type="text">
-            <input class="name lastname" type="text">
-            <br>
-            <label for=""><h6>Company name (optional)</h6></label>
-            <br>
-            <input type="text" name="" class="company">
-            <br>
-            <label for=""><h6>Country / Region</h6><span> *</span></label>
-            <h5>India</h5>
-            <br>
-            <label for=""><h6>Street Address</h6><span> *</span></label>
-            <br>
-            <input id="company" class="company" type="text" placeholder="House number and street name">
-            <br>
-             <label for=""><h6>Town / City</h6><span> *</span></label>
+            <input id="valid" type="text" placeholder="  Valid Date">
+             <input id="cvv" type="number" placeholder="  CVV">
              <br>
-             <input  class="company" type="text">
-             <br>
-             <label for=""><h6>State</h6></label>
-             <select name="" id="state">
-                 <option value="">Telangan</option>
-                 <option value="">Hyderabad</option>
-                 <option value="">Chennai</option>
-                 <option value="">Uttar Pradesh</option>
-                 <option value="">Delhi</option>
-             </select>
-             <br>
-            <label for=""><h6>PIN</h6><span> *</span></label>
-            <br>
-            <input class="company" type="text">
-            <br>
-            <label for=""><h6>Phone</h6><span> *</span></label>
-            <br>
-            <input class="company"type="number" >
-            <br>
-            <label for=""><h6>Email address</h6><span> *</span></label>
-            <br>
-            <input  class="company" id="optional" type="email">
-            <br>
-            <input id="submit" type="submit">
-        </form>
+             <input id="otp" type="number" placeholder="Enter otp 1234">
+             <input id="pay" type="submit" value="">
 
+        </form>
+        <p id="invalid"></p>
     </div>
-   
+
     
     <div id="lowerCover">
         <div id="lowerBox">
@@ -398,9 +321,38 @@
           
           window.location.href="login.html"
       }
-      document.querySelector("form").addEventListener("submit",addressFunction)
-      function addressFunction(){
-          event.preventDefault()
-          window.location.href="pay2.html"
-      }
+    
+    var cartItems = JSON.parse(localStorage.getItem("cartData"))
+    var total = localStorage.getItem("totalAmount");
+    document.querySelector("#pay").value=`PAY ${total}`
+  document.querySelector("form").addEventListener("submit",order)
+  function order(){
+      event.preventDefault()
+     var otp = document.querySelector("#otp").value
+    var number= document.querySelector("#number").value
+    var valid = document.querySelector("#valid").value
+    var cvv= document.querySelector("#cvv").value
+    if(otp==""||number==""||valid==""||cvv==""){
+        document.querySelector("#invalid").innerText="Invalid!"
+     document.querySelector("#otp").value="";
+     document.querySelector("#number").value="";
+     document.querySelector("#valid").value="";
+     document.querySelector("#cvv").value=""
+    }
+
+     else if(otp==1234){
+        document.querySelector("#payment").innerText="Order placed!"
+        document.querySelector("#payment").style.color="yellowgreen"
+         total =0
+         localStorage.setItem("totalAmount",total);
+     cartItems=[];
+     localStorage.setItem("cartData",JSON.stringify(cartItems));
+    document.querySelector("#container").innerText=""
+     }else{
+         document.querySelector("#invalid").innerText="Invalid!"
+         document.querySelector("#otp").value="";
+     }
+    
+  }
+
     </script>

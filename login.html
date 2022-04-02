@@ -217,7 +217,18 @@ label{
     var Cred = JSON.parse(localStorage.getItem("Cred"))||[]
    
     document.querySelector("form").addEventListener("submit",submitFunction)
-       var flag =false;
+       var flag = localStorage.getItem("loginFlag");
+       if(flag=="true"){
+        localStorage.setItem("loginFlag",flag)
+       document.querySelector("#logo").innerText = "Logout"
+       document.querySelector("#logo").addEventListener("click",logoutFunction)
+       document.querySelector("#logo").style.cursor="pointer"
+        document.querySelector("#logo").style.color="red"
+        document.querySelector(".name").innerText=""
+        document.querySelector(".pass").innerText=""
+     document.querySelector("#logindetails").innerText=""
+       }
+       
     function submitFunction(){
         event.preventDefault()
       var name = document.querySelector(".name").value;
@@ -234,21 +245,18 @@ label{
       flag = true
       localStorage.setItem("loginFlag",flag)
        document.querySelector("#logo").innerText = "Logout"
+       document.querySelector("#logo").addEventListener("click",logoutFunction)
        document.querySelector("#logo").style.cursor="pointer"
         document.querySelector("#logo").style.color="red"
         document.querySelector(".name").innerText=""
         document.querySelector(".pass").innerText=""
      document.querySelector("#logindetails").innerText=""
     }
-    flag = localStorage.getItem("loginFlag");
-    if(flag=="true"){
-        console.log(flag)
-         document.querySelector("#logo").addEventListener("click",logoutFunction)
-    }
     function logoutFunction(){
         console.log(flag)
+        window.location.reload()
         flag = false
         localStorage.setItem("loginFlag",flag)
-        window.location.reload()
+       
     }
 </script>
