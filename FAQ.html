@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="commoncss.css">
+
+    <script
+        src="https://kit.fontawesome.com/24c494a6b6.js"
+        crossorigin="anonymous">
+    </script>
+
+    <style>
+
+        .header{
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            justify-content: space-around;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            height:50px;
+            font-family: 'Open Sans', sans-serif;
+            cursor: pointer;
+    
+        }
+        .info{
+        
+            display: inline-block;
+            display: flex;
+            width: 60%;
+            margin-left: -50px;
+        }
+        .headerImg{
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-left: 40px;
+            margin-bottom:-5px
+
+        }
+        .infopara{
+            display:inline-block;
+            margin-left: 5px;
+            
+        }
+        .number{
+            font-weight: bold;
+        }
+
+
+
+
+
+
+        .header2{
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+        .header2 > div > img{
+            width: 60%;
+            height: 60px;
+            margin-left: 10px;
+            margin-top: -20px;
+        }
+        .header2>div:last-child{
+            margin-top: -10px;
+            height:50px;
+            display: flex;
+            padding: 0px 40px 0px 40px;
+            border-radius:30px;
+            color:white;
+            background-color:#da2424;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800px;
+        
+        }
+        .header2>div:last-child:hover{
+            background-color: #8ec038
+        }
+        .sticky{
+            overflow: hidden;
+            position: fixed;
+            top:0;
+            width: 100%;
+            background-color: white;
+            align-items: center;
+            height: 80px;
+            margin-top:-5px;
+            padding-top: 55px;
+            padding-bottom:45px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        }
+        .option{
+            display: flex;
+            margin-right: 60px;
+        }
+     #tag>li{
+         float: left;
+         width:150px;
+         height:40px;
+        font-family: 'Fira Sans', sans-serif;
+     
+     }
+
+
+     ul li a{
+         text-decoration: none;
+     }
+     #tag>li>a,.insidetag>li>a{
+         text-decoration: none;
+         display: block;
+         color:black
+
+     }
+     #tag>li>a:hover{
+        color: yellowgreen;
+        text-decoration: underline;
+         
+     }
+    .meal1{
+        margin-top: 10px;
+    }
+    .lastmeal{
+        margin-bottom:50px;
+    }
+
+     .insidetag>li{
+         float:left;
+        height:5px;
+         width:300px;
+         margin-left: -170px;
+         background-color: white;
+         padding: 15px 20px 35px 10px;
+
+         font-family: 'Fira Sans', sans-serif;
+         
+     }
+     .insidetag1 >li{
+       width:250px
+     }
+     .insidetag>li>a{
+         padding: 5px;
+         padding-left: 20px;
+     }
+     .insidetag>li>a:hover{
+         background-color: yellowgreen;
+         border-radius: 30px;
+         color: white;
+     }
+     #tag>li .insidetag>li{
+         display: none;
+     }
+     #tag>li:hover .insidetag>li{
+         display: block;
+         
+     }
+     .product1{
+         margin-left: 20px;
+     }
+     .product2{
+         margin-left: -70px;
+     }
+     .product3{
+         margin-left: -50px;
+     }
+     .product4{
+         margin-left: -30px;
+     }
+     .product5{
+         margin-left: -60px;
+     }
+
+
+
+
+
+
+
+
+
+
+
+        #container{
+            width: 90%;
+            height: 900px;
+            margin: auto;
+            display: flex;
+            
+        }
+        .box1{
+            width: 27.5%;
+            height: 350px;
+            margin-left: 5px;
+            margin-top: 90px;
+        }
+        .box1 > h2{
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 35px;
+        }
+        .box2{
+            width:65%;
+            height: 850px;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+       
+        #outerBox > div{
+            height: 50px;
+            width: 57%;
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+        #outerBox > div > img{
+            height: 53%;
+            width: 13%;
+            color: green;
+        }
+        #outerBox > div > p{
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        .box1 > p{
+            line-height: 28px;
+            font-size: 16px;
+        }
+        .box2 > div{
+            width: 90%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f3f5ed;
+            border-radius: 25px;
+            margin-top: 15px;
+            align-items: center;
+        }
+        .box2 >div > div > p{
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 18px;
+            margin-left: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            
+        }
+        .box2 >div > div{
+            width: 90%;
+
+        }
+        .box2 >div >h2{
+            margin-right: 30px;
+            color: rgb(41, 182, 41);
+            cursor: pointer;
+        }
+        .box2 >div > div > p:hover{
+            color: green;
+        }
+        #door {
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+            
+        }
+        #subdiv1{
+            background-color: white;
+        }
+        #door2{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+        }
+        #subdiv2{
+            background-color: white;
+        }
+        #door3{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+        }
+        #subdiv3{
+            background-color: white;
+        }
+        #door4{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+        }
+        #subdiv4{
+            background-color: white;
+        }
+        #door5{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+        }
+        #subdiv5{
+            background-color: white;
+        }
+        #door6{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+        }
+        #subdiv6{
+            background-color: white;
+        }
+        #door7{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+        }
+        #subdiv7{
+            background-color: white;
+            width: 85%;
+        }
+        #door8{
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: lighter;
+            margin-left: 55px;
+        }
+        #subdiv8{
+            background-color: white;
+            width: 85%;
+        }
+        #main{
+        width: 100%;
+        height: 350px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+        }
+        #main,h1{
+            font-size: 50px;
+            color: white;
+        }
+
+
+
+
+
+
+        ul>li{
+            font-family: 'Open Sans', sans-serif;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        ul>li:hover{
+            color:yellowgreen
+        }
+            #lowerCover{
+            background-color: #292d35;
+            height:650px
+        }
+        #lowerBox{
+        margin-top:200px;
+        height: 80%;
+            display: flex;
+        
+            justify-content: space-evenly;
+            padding: 30px;
+        background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2019/10/footer-bg.png");
+        }
+        #lowerBox>div{
+            width:22%;
+            display:block
+        }
+        .arrow{
+            color: yellowgreen;
+            font-size: 13px;
+            font-weight: bolder;
+            padding-right: 5px;
+        }
+        #lowerBox > div > p{
+            color: grey;
+            margin-top: 30px;
+            width: 65%;
+            text-align: justify;
+            text-align: justify;
+            line-height: 25px;
+            font-size: 17px;
+            margin-left: 80px;
+        }
+        .arrow1{
+        color:white;
+        background-color: yellowgreen;
+        font-size:35px;
+        margin-left: 10px;
+        border-radius: 55%;
+        margin-top: 10px;
+        }
+        #lowerBox > :nth-child(2){
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+        #lowerBox > :nth-child(3){
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+        #lowerBox > :nth-child(4){
+            margin-top: 60px;
+            margin-left: 60px;
+        }
+
+
+        #lowerBox>div>h2{
+            color:yellowgreen;
+            font-family: 'Fira Sans', sans-serif;
+        } 
+        .gap{
+            margin-top: 50px;
+            color: white; 
+            font-family: 'Open Sans', sans-serif;
+        }
+        .lesgap{
+            color: white;
+            margin-top: 15px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .nogap{
+            color: white;
+            margin-top: 5px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #lowerCover>div:last-child{
+            margin-top: 70px;
+            height:60px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;      }
+        #lowerCover>div:last-child>p{
+            color:white;
+            margin-top:40px;
+            margin-left: 80px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        span{
+            color:yellowgreen
+        }
+        span:hover{
+            color:red;
+            cursor: pointer;
+        }
+        #lowerBox > div > img{
+            width: 45%;
+            height: 60px;
+            margin-left: 90px;
+            margin-top: 50px;
+        }
+        #lowerBox > div > div{
+            margin-left: 70px;
+        }
+
+      
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="info">
+            
+           <div><img class="headerImg" src="https://cdn.vox-cdn.com/thumbor/Sk0PlZgKCM6p3YS_4sMW2h6xVlQ=/1400x1050/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/19700731/googlemaps.png" alt="">
+               <p class="infopara">Food delivery only in Hyderabad</p></div> 
+           <div>
+               <img class="headerImg"  src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-call-icon-image_1128295.jpg" alt="">
+              <p class="infopara number">9100347480<p>
+            </div>
+            <div>
+                <img  class="headerImg" src="https://cdn-icons-png.flaticon.com/512/747/747483.png" alt="">
+                    <p class="infopara">fitmealsindia@gmail.com</p>
+            </div>
+        </div>
+        <div>
+            <img class="headerImg crat"  src="https://cdn.icon-icons.com/icons2/2566/PNG/512/search_icon_153438.png" alt="">
+        <img  class="headerImg crat" src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="">
+        <img class="headerImg crat"  src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="">
+    </div>
+    </div>
+
+
+
+    <div class="header2">
+        <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt=""></div>
+        <div class="options">
+           <ul id="tag" type="none">
+            <li><a href="#1">HOME</a></li>
+            <li class="product2"><a href="#2">MEALS ></a>
+              <ul class="insidetag" type="none"> 
+                <li class="meal1"><a href="#3">Weight Loss Meal Plan</a></li> 
+                <li><a href="#4">Maintainance Meal Plan</a></li>
+                <li><a href="#5">Athelatic Meal Plan</a></li>
+                <li><a href="#6">Keto Meal Plan</a></li>
+                <li class="lastmeal"><a href="#7">Transformation Challenges</a></li> 
+              </ul>
+            </li>
+              <li class="product3"><a href="#8">Health Challenges</a></li>
+              <li class="product1"><a href="products.html">Products ></a>
+                <ul class="insidetag insidetag1" type="none">
+                    <li class="meal1"><a href="vsweets.html">Vegan Sweets</a> </li>
+                    <li><a href="sauces.html">Low-Cal Sauces</a></li>
+                    <li><a href="butters.html">Nut Butters</a></li>
+                    <li class="lastmeal"><a href="bakes.html">Fresh Bakes</a></li>
+                </ul>
+            </li>
+             <li class="product4"><a href="#9">Blog</a></li>
+             <li class="product5"><a href="aboutUs.html">About Us ></a>
+              <ul class="insidetag insidetag1" type="none">
+                  <li class="meal1"><a href="aboutUs.html"> Our Story</a></li>
+                  <li><a href="FAQ.html">FAQ</a></li>
+                  <li class="lastmeal"><a href="testimonials.html">Testimonials</a></li>
+
+              </ul>
+            </li>
+            
+           </ul>
+        </div>
+        <div>Call: 9100347480</div>
+    </div>
+
+
+
+
+
+
+
+    <div id="main">
+      <center> <h1>Frequently Asked Questions</h1>  </center> 
+    </div>
+    <div id="container">
+        <div class="box1">
+            <h2>If you need more help</h2>
+            <p>Have more queries regarding the plans or need a customised plan? No problem! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <div id="outerBox">
+                <div>
+                    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWGdCFD0t_zttemCxQM3Qf8alaVLERWObfcQ&usqp=CAU alt="">
+                    <p>+91 9963697412</p>
+                </div>
+                <div>
+                    <img src="data:image/png;base64,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" alt="">
+                    <p>fitmealsindia@gmail.com</p>
+                </div>
+                <div>
+                   <img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-coloricon/21/06_1-512.png" alt="">
+                   <p>Banjara Hills, road no.5</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box2">
+            <div>
+                <div id="div1"><p>Why should I choose Fitmeals?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv1">
+
+            </div>
+            <div>
+                <div id="div2"><p>I'm a vegeterian on some days and eat non-veg on other days, can I change my meals based on that?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv2"></div>
+
+
+            <div>
+                <div id="div3"><p>What payment method exist in your company?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv3"></div>
+
+            <div>
+                <div id="div4"><p>Can I get a refund if I dont't want to continue the service?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv4"></div>
+
+
+            <div>
+                <div id="div5"><p>Is your meat halal?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv5"></div>
+
+
+            <div>
+                <div id="div6"><p>What if I'm travelling or don't want meals on particular day?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv6"></div>
+
+
+            <div>
+                <div id="div7"><p>Do you guarantee weight loss?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv7"></div>
+
+
+            <div>
+                <div id="div8"><p>How do I know which plan to choose?</p></div>
+                <h2> > </h2>
+            </div>
+            <div id="subdiv8"></div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div id="lowerCover">
+        <div id="lowerBox">
+            <div>
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"/>
+                <p>The Fitmeals culinary team consists of very passionate and skilled chefs. Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+               <div><i class="fa-brands fa-twitter lowicon arrow1"></i>
+                <i class="fa-brands fa-facebook lowicon arrow1"></i>
+                <i class="fa-brands fa-instagram lowicon arrow1"></i>
+            </div>
+            </div>
+            <div><h2>Explore</h2>
+                <ul  type="none">
+                    <li class="gap"><i class="fa-solid fa-greater-than arrow"></i> Home</li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Meal Plans</li>
+                  </ul>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <ul  type="none">
+                    <li class="gap"><i class="fa-solid fa-greater-than arrow"></i> About Us</li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Blog </li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> FAQ </li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Testimonials </li>
+                </ul>
+            </div>
+            
+             <div>
+                <h2>Contact</h2>
+                <ul  type="none">
+                    <li class="gap"><i class="fa-solid fa-phone-volume arrow"></i> Call Us:</li>
+                    <ul type="none">
+                        <li class="nogap">9100347480</li>
+                        <li class="nogap">9963697412</li>
+                    </ul>
+                    <li class="gap"><i class="fa-solid fa-envelope arrow"></i> Email Us:</li>
+                    <ul type="none">
+                        <li class="nogap">fitmealsindia@gmail.com</li>
+                    </ul>
+                    <li class="gap"><i class="fa-solid fa-location-dot arrow"></i> Our Location</li>
+                    <ul type="none">
+                        <li class="nogap">Banjara Hills, Road no.5,</li>
+                        <li class="nogap">Hyderabad</li>
+                    </ul>
+                </ul>
+             </div>
+        </div>
+        <div><p>Copyright © 2021.<span>FitMeals</span>. All Rights Reserved.</p></div>
+    </div>
+
+
+
+</body>
+</html>
+
+<script>
+
+    document.querySelector("#div1").addEventListener("click",function(){
+        myFunction1()
+    })
+
+
+    const myFunction1 = () =>{
+
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+
+        var div = document.createElement("div")
+
+        var para = document.createElement("p")
+        para.innerText = "We take pride in procuring the best quality of ingredients and preparing delicious yet highly nutritious meals. Our food is not only freshly prepared but is also hygiene approved."
+
+        
+
+         
+        para.setAttribute("id","door")
+        div.append(para)
+
+        document.querySelector("#subdiv1").append(div)
+    }
+
+
+
+
+
+
+
+    document.querySelector("#div2").addEventListener("click",function(){
+        myFunction2()
+    })
+
+    const myFunction2 = () =>{
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+        
+
+        var div2 = document.createElement("div")
+
+        var para2 = document.createElement("p")
+        para2.innerText = "We are very flexible in the service we provide, you can just let us know about your food preferences and we will send meals with respect to that."
+       
+        para2.setAttribute("id","door2")
+        div2.append(para2)
+
+        document.querySelector("#subdiv2").append(div2)
+
+    }
+
+
+
+    document.querySelector("#div3").addEventListener("click",function(){
+        myFunction3()
+    })
+
+    const myFunction3 = () =>{
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+
+        var div3 = document.createElement("div")
+
+        var para3 = document.createElement("p")
+        para3.innerText = "You can pay by cash, card, Gpay, Paytm, PhonePay."
+       
+        para3.setAttribute("id","door3")
+        div3.append(para3)
+
+        document.querySelector("#subdiv3").append(div3)
+
+    }
+
+
+
+    document.querySelector("#div4").addEventListener("click",function(){
+        myFunction4()
+    })
+
+    const myFunction4 = () =>{
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+
+        var div4 = document.createElement("div")
+
+        var para4 = document.createElement("p")
+        para4.innerText = "At Fitmeals, we have a STRICT no refund policy. We’d suggest you to go for the trial plans first."
+       
+        para4.setAttribute("id","door4")
+        div4.append(para4)
+
+        document.querySelector("#subdiv4").append(div4)
+
+    }
+
+
+
+
+    document.querySelector("#div5").addEventListener("click",function(){
+        myFunction5()
+    })
+
+    const myFunction5 = () =>{
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+
+        var div5 = document.createElement("div")
+
+        var para5 = document.createElement("p")
+        para5.innerText = "Yes absolutely, our meals are 100% halal"
+       
+        para5.setAttribute("id","door5")
+        div5.append(para5)
+
+        document.querySelector("#subdiv5").append(div5)
+
+    }
+
+
+
+    document.querySelector("#div6").addEventListener("click",function(){
+        myFunction6()
+    })
+
+    const myFunction6 = () =>{
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+
+        var div6 = document.createElement("div")
+
+        var para6 = document.createElement("p")
+        para6.innerText = "If you wish to pause or cancel your meals, you just have to inform us one day prior and we’ll stop your services immediately."
+       
+        para6.setAttribute("id","door6")
+        div6.append(para6)
+
+        document.querySelector("#subdiv6").append(div6)
+
+    }
+
+
+
+
+
+    document.querySelector("#div7").addEventListener("click",function(){
+        myFunction7()
+    })
+
+    const myFunction7 = () =>{
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+
+        var div7 = document.createElement("div")
+
+        var para7 = document.createElement("p")
+        para7.innerText = "We do not guarantee weight loss since every body type is different; our diet plans may work for some while others won’t see a difference. However, we will try our best and alter the diet accordingly to help your reach your goals."
+       
+        para7.setAttribute("id","door7")
+        div7.append(para7)
+
+        document.querySelector("#subdiv7").append(div7)
+
+    }
+
+
+
+
+    document.querySelector("#div8").addEventListener("click",function(){
+        myFunction8()
+    })
+
+    const myFunction8 = () =>{
+        document.querySelector("#subdiv1").innerHTML=""
+        document.querySelector("#subdiv2").innerHTML=""
+        document.querySelector("#subdiv3").innerHTML=""
+        document.querySelector("#subdiv4").innerHTML=""
+        document.querySelector("#subdiv5").innerHTML=""
+        document.querySelector("#subdiv6").innerHTML=""
+        document.querySelector("#subdiv7").innerHTML=""
+        document.querySelector("#subdiv8").innerHTML=""
+
+        var div8 = document.createElement("div")
+
+        var para8 = document.createElement("p")
+        para8.innerText = "If you can’t understand which plan would work the best for you, you can contact our nutritionists directly at 9100347480 for a consultation session."
+       
+        para8.setAttribute("id","door8")
+        div8.append(para8)
+
+        document.querySelector("#subdiv8").append(div8)
+
+    }
+
+
+
+   window.onscroll = function() {myFunction()};
+    
+    var navbar = document.querySelector(".header2");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      } 
+    }
+    
+
+    
+  
+
+
+
+
+
+
+
+
+</script>
