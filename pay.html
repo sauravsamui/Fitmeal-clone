@@ -112,6 +112,104 @@
      .product5{
          margin-left: -60px;
      }
+     span>a,span{
+         text-decoration: none;
+         color: black;
+     }
+     span>a:hover{
+         color: yellowgreen;
+     }
+     span:hover{
+         color: yellowgreen;
+     }
+     .login{
+         height:55px;
+         width:60%;
+         margin:auto;
+         padding:15px 0px 0px 15px;
+         margin-top:30px;
+         background-color: whitesmoke;
+         border-radius: 20px;
+     }
+     .login1{
+         margin-top: 100px;
+     }
+     #check{
+         display:inline-block;
+         -webkit-appearance: checkbox;
+         height:12px;
+         width:12px;
+         margin-right: 5px;
+     }
+     .login2{
+         border:none;
+         background-color:white;
+     }
+     .login2>h1{
+        display: inline-block;
+        font-family: 'Fira Sans', sans-serif;
+        margin-left: -20px;
+     }
+     .ship{
+         margin-left: 160px;
+     }
+     label>h6{
+       display: inline-block;
+     }
+     #state{
+     margin-right: 10px;
+     border: 1px solid grey;
+     padding-left: 10px;
+     
+     }
+     #billing{
+         margin: auto;
+         width:57%;
+         margin-top: 10px;
+     }
+     input{
+       border: 1px solid grey;
+     }
+     label{
+         margin-top: 20px;
+     }
+     .name{
+         width:150px;
+         border-radius: 30px;
+         height: 60px;
+     }
+     .lastname{
+         margin-left: 50px;
+     }
+     .lastname1{
+         margin-left: 120px;
+     }
+     .company{
+         width:350px;
+         border-radius: 30px;
+         height: 60px;
+         padding-left: 10px;
+     }
+     h6+span{
+         color: red;
+     }
+     option{
+         margin-top: 10px;
+        
+     }
+    #submit{
+        width:200px;
+       margin-top: 20px;
+      border-radius:30px;
+      background-color: yellowgreen;
+      font-family: 'Fira Sans', sans-serif;
+      color: white;
+      border:none
+    } 
+    #submit:hover{
+        background-color: #292d35;
+       
+    }
   </style>
 </head>
 <body>
@@ -140,7 +238,7 @@
         <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt=""></div>
         <div class="options">
            <ul id="tag" type="none">
-            <li><a href="#1">HOME</a></li>
+            <li><a href="index.html">HOME</a></li>
             <li class="product2"><a href="#2">MEALS ></a>
               <ul class="insidetag" type="none"> 
                 <li class="meal1"><a href="#3">Weight Loss Meal Plan</a></li> 
@@ -175,11 +273,59 @@
     </div>
     <div class="middlebox">Checkout</div>
 
-    <div id="login"><p><i class="fa-regular fa-calendar arrow"></i>Returning customer?<span class="profile"> Click here to login</span></p></div>
-    <div id="login"><p><i class="fa-regular fa-calendar arrow"></i>Have a coupon?<span> Click here to enter your code</span></p></div>
+    <div class="login login1"><p><i class="fa-regular fa-calendar arrow"></i>Returning customer?<span><a href="login.html">Click here to login</a> </span></p></div>
+    <div class="login"><p><i class="fa-regular fa-calendar arrow"></i>Have a coupon?<span> Click here to enter your code</span></p></div>
+    <div class="login login2"><h1>Billing details</h1>
+        <input id="check"  class="ship" type="checkbox">
+        <label  for=""><h6> Ship to a different address?</h6></label>
+    </div>
+    
     <div id="billing">
-     <div></div>
-     <div></div>
+        <form action="">
+            <label for=""><h6>First name</h6><span> *</span></label>
+            <label class="lastname1" for=""><h6>Last name</h6><span> *</span></label>
+            <br>
+            <input class="name" type="text">
+            <input class="name lastname" type="text">
+            <br>
+            <label for=""><h6>Company name (optional)</h6></label>
+            <br>
+            <input type="text" name="" class="company">
+            <br>
+            <label for=""><h6>Country / Region</h6><span> *</span></label>
+            <h5>India</h5>
+            <br>
+            <label for=""><h6>Street Address</h6><span> *</span></label>
+            <br>
+            <input id="company" class="company" type="text" placeholder="House number and street name">
+            <br>
+             <label for=""><h6>Town / City</h6><span> *</span></label>
+             <br>
+             <input  class="company" type="text">
+             <br>
+             <label for=""><h6>State</h6></label>
+             <select name="" id="state">
+                 <option value="">Telangan</option>
+                 <option value="">Hyderabad</option>
+                 <option value="">Chennai</option>
+                 <option value="">Uttar Pradesh</option>
+                 <option value="">Delhi</option>
+             </select>
+             <br>
+            <label for=""><h6>PIN</h6><span> *</span></label>
+            <br>
+            <input class="company" type="text">
+            <br>
+            <label for=""><h6>Phone</h6><span> *</span></label>
+            <br>
+            <input class="company"type="number" >
+            <br>
+            <label for=""><h6>Email address</h6><span> *</span></label>
+            <br>
+            <input  class="company" id="optional" type="email">
+            <br>
+            <input id="submit" type="submit">
+        </form>
 
     </div>
    
@@ -251,5 +397,10 @@
       function loginFunction(){
           
           window.location.href="login.html"
+      }
+      document.querySelector("form").addEventListener("submit",addressFunction)
+      function addressFunction(){
+          event.preventDefault()
+          window.location.href="pay2.html"
       }
     </script>
