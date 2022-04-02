@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="commoncss.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+      .middlebox{
+          background-image: url("https://www.fitmeals.co.in/wp-content/uploads/2018/02/inner-page.jpg");
+      }
+      #empty{
+          text-align: center;
+          margin-top: 100px;
+          font-family: 'Open Sans', sans-serif;
+      }
+     
+      #img{
+          height:80px;
+          width: 80px;
+      }
+      #input{
+          border:1px solid grey;
+          width:60px;
+          height:40px;
+          border-radius:20px;
+          padding-left: 10px;
+      }
+     
+      * {
+  box-sizing: border-box;
+}
+table {
+border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+table td,
+table th {
+  padding: 15px;
+  text-align: center;
+}
+table th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #292d35;
+  color: white;
+  text-align: center;
+}
+table td,tbody{
+    border:1px solid whitesmoke;
+}
+#remove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 20px;
+}
+.no-th{
+    border-top-left-radius: 20px;
+    padding-left: 20px;
+}
+.name-th{
+    border-top-right-radius: 20px;
+}
+#coupon-box{
+   
+    width: 700px;
+    display: flex;
+    margin-left: 270px;
+    margin-top: 20px;
+}
+#coupon{
+    border:1px solid whitesmoke;
+    border-radius:20px;
+    height: 40px;
+    width:200px;
+    padding-left: 20px;
+
+
+}
+#coupon-btn{
+    padding: 0px 20px;
+    border-radius:20px;
+    background-color:#da2424 ;
+    color: white;
+    border:none;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:medium;
+}
+#coupon-btn:hover{
+    background-color: yellowgreen;
+}
+#address{
+    width:300px;
+    margin-left:800px;
+    margin-top: -30px;
+
+}
+#checkout{
+    padding: 15px 50px;
+    border-radius:30px;
+    background-color:#da2424;
+    color: white;
+    border:none;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:medium;
+    margin-top: 20px;
+    margin-left: 830px;
+}
+#checkout:hover{
+    background-color:#292d35 ;
+}
+  </style>
+</head>
+<body>
+       
+    <div class="header">
+        <div class="info">
+            
+           <div><img class="headerImg" src="https://cdn-icons-png.flaticon.com/512/3892/3892652.png" alt="">
+               <p class="infopara">Food delivery only in Hyderabad</p></div> 
+           <div>
+               <img class="headerImg"  src="https://cdn-icons.flaticon.com/png/512/1538/premium/1538493.png?token=exp=1648558272~hmac=37d03bb136553ec170371cb2055394a6" alt="">
+              <p class="infopara number">9100347480<p>
+            </div>
+            <div>
+                <img  class="headerImg" src="https://cdn-icons-png.flaticon.com/512/747/747483.png" alt="">
+                    <p class="infopara">fitmealsindia@gmail.com</p>
+            </div>
+        </div>
+        <div>
+            <img class="headerImg crat"  src="https://cdn-icons.flaticon.com/png/512/3106/premium/3106797.png?token=exp=1648558957~hmac=0e62dac1b56293c8a2134f3d49dff4cd" alt="">
+        <img  class="headerImg crat profile" src="https://cdn-icons-png.flaticon.com/512/126/126486.png" alt="">
+        <img class="headerImg crat cart"  src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png" alt="">
+    </div>
+    </div>
+    <div class="header2">
+        <div><img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png" alt=""></div>
+        <div class="options">
+           <ul id="tag" type="none">
+            <li><a href="index.html">HOME</a></li>
+            <li class="product2"><a href="#2">MEALS ></a>
+              <ul class="insidetag" type="none"> 
+                <li class="meal1"><a href="#3">Weight Loss Meal Plan</a></li> 
+                <li><a href="#4">Maintainance Meal Plan</a></li>
+                <li><a href="#5">Athelatic Meal Plan</a></li>
+                <li><a href="#6">Keto Meal Plan</a></li>
+                <li class="lastmeal"><a href="#7">Transformation Challenges</a></li> 
+              </ul>
+            </li>
+              <li class="product3"><a href="#8">Health Challenges</a></li>
+              <li class="product1"><a href="products.html">Products ></a>
+                <ul class="insidetag insidetag1" type="none">
+                    <li class="meal1"><a href="vsweets.html">Vegan Sweets</a> </li>
+                    <li><a href="sauces.html">Low-Cal Sauces</a></li>
+                    <li><a href="butters.html">Nut Butters</a></li>
+                    <li class="lastmeal"><a href="bakes.html">Fresh Bakes</a></li>
+                </ul>
+            </li>
+             <li class="product4"><a href="#9">Blog</a></li>
+             <li class="product5"><a href="#10">About Us ></a>
+              <ul class="insidetag insidetag1" type="none">
+                  <li class="meal1"><a href="#11"> Our Story</a></li>
+                  <li><a href="#12">FAQ</a></li>
+                  <li class="lastmeal"><a href="#13">Testimonials</a></li>
+
+              </ul>
+            </li>
+            
+           </ul>
+        </div>
+        <div>Call: 9100347480</div>
+    </div>
+    
+    <div class="middlebox">Cart</div>
+    <div id="container">
+        <p id="empty"><i class="fa-regular fa-calendar arrow"></i> Your cart is currently empty.</p>
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                       
+                        <th class="no-th"></th>
+                        <th class="">Product</th>
+                        <th class="">Price</th>
+                        <th class="">Quantity</th>
+                        <th class="name-th">Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="body"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="coupon-box">
+        <input id="coupon" type="text" placeholder="masai30" >
+        <button id="coupon-btn">Apply coupon</button>
+        <p id="applied"></p>
+    </div>
+    <div>
+        <table id="address">
+            <tr>
+                <td>Shiping</td>
+                <td>Flat rate: ₹50.00
+                    Shipping to Telangana.
+                    CHANGE ADDRESS<i class="fa-solid fa-truck"></i></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td id="total"></td>
+            </tr>
+        </table>
+    </div>
+    <button id="checkout">Proceed to checkout</button>
+    <div id="lowerCover">
+        <div id="lowerBox">
+            <div>
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"/>
+                <p>The Fitmeals culinary team consists of very passionate and skilled chefs. Our team is well versed in nutrition and all our menus and plans are designed by qualified nutrition experts.</p>
+               <div><i class="fa-brands fa-twitter lowicon arrow1"></i>
+                <i class="fa-brands fa-facebook lowicon arrow1"></i>
+                <i class="fa-brands fa-instagram lowicon arrow1"></i>
+            </div>
+            </div>
+            <div><h2>Explore</h2>
+                <ul  type="none">
+                    <li class="gap"><i class="fa-solid fa-greater-than arrow"></i> Home</li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Meal Plans</li>
+                  </ul>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <ul  type="none">
+                    <li class="gap"><i class="fa-solid fa-greater-than arrow"></i> About Us</li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Blog </li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> FAQ </li>
+                    <li class="lesgap"><i class="fa-solid fa-greater-than arrow"></i> Testimonials </li>
+                </ul>
+            </div>
+            
+             <div>
+                <h2>Contact</h2>
+                <ul  type="none">
+                    <li class="gap"><i class="fa-solid fa-phone-volume arrow"></i> Call Us:</li>
+                    <ul type="none">
+                        <li class="nogap">9100347480</li>
+                        <li class="nogap">9963697412</li>
+                    </ul>
+                    <li class="gap"><i class="fa-solid fa-envelope arrow"></i> Email Us:</li>
+                    <ul type="none">
+                        <li class="nogap">fitmealsindia@gmail.com</li>
+                    </ul>
+                    <li class="gap"><i class="fa-solid fa-location-dot arrow"></i> Our Location</li>
+                    <ul type="none">
+                        <li class="nogap">Banjara Hills, Road no.5,</li>
+                        <li class="nogap">Hyderabad</li>
+                    </ul>
+                </ul>
+             </div>
+        </div>
+        <div><p>Copyright © 2021.<span>FitMeals</span>. All Rights Reserved.</p></div>
+    </div>
+</body>
+</html>
+<script src="common.js"></script>
+<script>
+    document.querySelector(".cart").addEventListener("click",cartFunction)
+       function cartFunction(){
+           window.location.href="cart.html"
+       }
+       var cartItem = JSON.parse(localStorage.getItem("cartData"))||[];
+       window.addEventListener("load",function(){
+           cart(cartItem)
+       })
+       var total = cartItem.reduce(function(acu,el){
+           return acu + Number(el.price)
+       },0)
+
+       total = total +50
+       document.querySelector("#total").innerText="₹"+total
+        localStorage.setItem("totalAmount",total)
+       var flag = localStorage.getItem("loginFlag")
+       function cart(){
+           if(flag=="false"|| flag == null){
+            document.querySelector("#table").innerText=""
+            document.querySelector("#coupon-box").innerText=""
+            document.querySelector("#address").innerText=""
+            document.querySelector("#checkout").innerText=""
+            document.querySelector("#checkout").style.backgroundColor="white"
+            document.querySelector("#empty").innerText="Login to see what you added previously!"
+
+          return
+           }
+        if(cartItem.length == 0){
+            document.querySelector("#table").innerText=""
+            document.querySelector("#coupon-box").innerText=""
+            document.querySelector("#address").innerText=""
+            document.querySelector("#checkout").innerText=""
+            document.querySelector("#checkout").style.backgroundColor="white"
+
+          return
+       }
+       else{
+        document.querySelector("#empty").innerHTML=""
+          cartItem.map(function(el,index){
+              var tr = document.createElement("tr")
+               var td1 = document.createElement("tr")
+               td1.innerText="x"
+               td1.style.color="red";
+               td1.style.cursor="pointer"
+               td1.setAttribute("id","remove")
+               td1.addEventListener("click",function(){
+                   removeItem(el,index)
+               })
+              var td2 = document.createElement("td")
+              var img = document.createElement("img")
+              img.src=el.img_url;
+              img.setAttribute("id","img")
+              td2.append(img)
+              var td3 = document.createElement("td")
+              td3.innerText=el.name
+              var td4 = document.createElement("td")
+              var input = document.createElement("input")
+              input.type="number"
+              input.placeholder=1
+              input.setAttribute("id","input")
+              td4.append(input)
+              var td5 = document.createElement("td")
+              td5.innerText ="₹"+el.price
+               tr.append(td1,td2,td3,td4,td5)
+               document.querySelector("#body").append(tr)
+               
+          }) 
+       }
+       }
+       function removeItem(el,index){
+           cartItem.splice(index,1)
+           localStorage.setItem("cartData",JSON.stringify(cartItem))
+           window.location.reload()
+       }
+       document.querySelector("#coupon-btn").addEventListener("click",couponFunction)
+       var count =0;
+       function couponFunction(){
+           if(count==1){
+               return
+           }
+           var coupon = document.querySelector("#coupon").value
+           if(coupon == "masai30"){
+               var total1 = localStorage.getItem("totalAmount")
+               total1 = Math.ceil(total -(total*30/100))+50
+               localStorage.setItem("totalAmount",total1)
+           document.querySelector("#applied").style.marginLeft ="10px"
+           document.querySelector("#applied").style.color ="red"
+           document.querySelector("#applied").innerText="Coupon Applied!"
+           document.querySelector("#total").innerText="₹"+total1
+           count++
+           }
+           else{
+            document.querySelector("#applied").innerText="Coupon Invalid!"
+            document.querySelector("#applied").style.marginLeft ="10px"
+            document.querySelector("#applied").style.color ="red"
+           }
+           
+       }
+       document.querySelector("#checkout").addEventListener("click",payment)
+       function payment(){
+           window.location.href="pay.html"
+       }
+</script>
