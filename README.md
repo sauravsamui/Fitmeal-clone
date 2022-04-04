@@ -15,3 +15,4 @@ At last, I would like to thank our mentors and my team members for their support
 
 Here is the Netlify link of our project(Fitmeals-Clone)
 https://grand-longma-97f1d2.netlify.app/index.html 
+this is blog on our project - https://medium.com/@bhawnask32/collaborative-project-at-masai-school-fitmeals-clone-a5b07fcabedf
