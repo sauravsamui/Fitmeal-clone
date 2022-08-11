@@ -68,7 +68,7 @@ Fitmeals is a marketing company specializing in Healthy meal, Healthy food. The 
   <img src="https://miro.medium.com/max/1400/1*-f_XjcqysiuHq9tlLyTZWw.png" alt="hmpg"/>
   
     
-##Learnings -
+## Learnings -
 
 - We all became proficient in reading the code of team members.
 - How to work and communicate with a team.
