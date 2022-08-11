@@ -68,7 +68,7 @@ Fitmeals is a marketing company specializing in Healthy meal, Healthy food. The 
   <img src="https://miro.medium.com/max/1400/1*-f_XjcqysiuHq9tlLyTZWw.png" alt="hmpg"/>
   
     
-Learnings -
+##Learnings -
 
 - We all became proficient in reading the code of team members.
 - How to work and communicate with a team.
@@ -76,6 +76,7 @@ Learnings -
 - Here I get to know how the team works, how to keep cool even under pressure conditions, how to keep myself and my teammates motivated throughout the ups and downs.
 - At last, I would like to thank our mentors and my team members for their support & guidance during the project.
 
-Here is the Netlify link of our project(Fitmeals-Clone)
-https://grand-longma-97f1d2.netlify.app/index.html 
-this is blog on our project - https://medium.com/@bhawnask32/collaborative-project-at-masai-school-fitmeals-clone-a5b07fcabedf
+
+## This is blog on our project 
+
+-[Fitmeal-Clone -Blog](https://medium.com/@bhawnask32/collaborative-project-at-masai-school-fitmeals-clone-a5b07fcabedf)
