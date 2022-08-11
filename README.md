@@ -79,4 +79,4 @@ Fitmeals is a marketing company specializing in Healthy meal, Healthy food. The 
 
 ## This is blog on our project 
 
--[Fitmeal-Clone -Blog](https://medium.com/@bhawnask32/collaborative-project-at-masai-school-fitmeals-clone-a5b07fcabedf)
+- [Fitmeal-Clone -Blog](https://medium.com/@bhawnask32/collaborative-project-at-masai-school-fitmeals-clone-a5b07fcabedf)
